@@ -10,5 +10,5 @@ Visit the [Release](https://github.com/blackreach/docs/releases/) page for compl
 ### Fork it!
 These documents are intended to be part of an open and collaborative project. Feel free to fork them and/or send pull requests!
 
-### Licesne
-These documents are published under the **Apache License 2.0**. Visit the *LICENSE* file for more info.
+### License
+These documents are published under the **Apache License 2.0**. Visit the [LICENSE](https://github.com/blackreach/docs/blob/master/LICENSE) file for more info.
