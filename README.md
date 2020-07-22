@@ -2,7 +2,7 @@
 These articles are meant to cover the topics of electrical and electronic engineering in-depth. They will start off by articles on mathematics backgrounds and slowly build up to more advanced and real-world application of EE subjects.
 
 ## Articles
-1. [Logarith and exponential functions.](https://github.com/blackreach/docs/releases/download/v0.1.0/1_Logarithm_and_exponential_functions.pdf)
+1. [Logarithm and exponential functions.](https://github.com/blackreach/docs/releases/download/v0.1.0/1_Logarithm_and_exponential_functions.pdf)
 *This article covers the math behind exponentials and how they appear in circuit analysis*
 2. *TBD*
 ## Releases
