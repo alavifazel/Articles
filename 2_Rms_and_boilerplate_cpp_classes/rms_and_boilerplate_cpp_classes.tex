@@ -11,7 +11,7 @@
 	\maketitle
 	
 	\begin{abstract}
-	In this article we will take a look at the \textit{rms} value of an AC signal and when it's used. Subsequently we'll start writing software code that we would use in future projects and articles as well.
+	In this article we will take a look at the \textit{rms} value of an AC signal and when it's used. Subsequently we'll start writing software code that represent electrical signals in a software program.
 
 	\end{abstract}
 	
@@ -43,7 +43,7 @@
 	
 	$$P(t) = \frac{V(t)^2}{R}$$
 	
-	This formula gives the power at each point in time. Since $V(t)$ is alternating, the power varies over time as well and doesn't have a fixed value. So to calculate the \textit{average} power, we should use integral for this.
+	This formula gives the power at each point in time. Since $V(t)$ is alternating, the power varies over time as well and doesn't have a fixed value. So to calculate the \textit{average} power we should use integral for this.
 	
 	$$P_{avg} = \frac{1}{R}.\frac{\int_{T0}^{T1} V(t)^2 dt }{T1 - T0}$$
 	
@@ -51,7 +51,7 @@
 	
 	$$V_{rms} = \sqrt{\frac{\int_{T0}^{T1} V(t)^2 dt }{T1 - T0}} $$
 	
-	Now having this value, for calculating the average power we should reverse the effect of taking the square root, by raise it to power of $2$ (and division by resistivity $R$):
+	Now by having this value, to calculate the average power we should reverse the effect of taking the square root by raise it to power of $2$ (and division by resistivity $R$):
 	
 	$$ P_{avg} = \frac{V^2_{rms}}{R} $$
 	
@@ -95,16 +95,16 @@
 	Which proves that for calculating the \textit{rms} of a sinusoidal signal, we can skip the integration process and simply divide its peak value by $\sqrt{2}$.
 
 	
-	\section{Implementing Electric signals in software}
-	Before continuing with the more advanced EE concepts, let's implement the ideas we discussed so far in form of a software package. We would therefore use these implementations readily in the future articles and projects as well. We will use C++ to write these constructs since it is widely used in microcontroller and system programming; and also supports advanced language features and paradigms.
+	\section{Representing electrical signals in software}
+	Before continuing with the more advanced EE concepts, let's implement the ideas we discussed so far in form of a software package. We would therefore use these implementations readily in the future articles and projects as well. We use the C++ language to write these constructs since it is widely used in microcontroller and system programming; And also supports advanced language features and paradigms.
 	
-	One of the fundamental concepts that we would want to implement, is a construct that would represent an \textit{electric signal} in our programs. This idea can be implemented conveniently with OOP\footnote[1]{Object Oriented Programming} paradigm; i.e. if we have a \textit{class} that represents the type of a signal in our program, instantiating it with:
+	One of the fundamental concepts that we would want to implement, is a construct that would represent an \textit{electrical signal} in our programs. This idea can be implemented conveniently with OOP\footnote[1]{Object Oriented Programming} paradigm; i.e. if we have a \textit{class} that represents the type of a signal in our program, instantiating it with:
 	
 	\begin{verbatim}
 		Signal s(<function_body>);
 	\end{verbatim}
 	 
-	Would capture the signal's function, and with the appropriate definition of our class, this instance $s$ would readily contain all the frequently used operations such as $rms$. Hence:
+	Would capture the signal's function, and with the appropriate definition of our class this instance $s$ would readily contain all the frequently used operations such as calculating its $rms$ and etc. Hence:
 	
 	\begin{verbatim}
 	s.getRms()
