@@ -4,7 +4,7 @@ These articles are meant to cover the topics of electrical and electronic engine
 ## Articles
 1. [Logarithm and exponential functions.](https://github.com/blackreach/docs/releases/download/v0.1.1/1_Logarithm_and_exponential_functions.pdf)
 *This article covers the math behind exponentials and how they appear in circuit analysis*
-2. [RMS and boilerplate software classes](https://github.com/blackreach/docs/releases/download/v0.1.1/2_Rms_and_boilerplate_cpp_classes.pdf)
+2. [RMS and boilerplate C++ classes](https://github.com/blackreach/docs/releases/download/v0.1.1/2_Rms_and_boilerplate_cpp_classes.pdf)
 *This article covers the concept of root mean square (rms) and the reason we define it for AC signals. We also implement some boilerplate C++ classes to work with electrical signals in our projects* 
 ## Releases
 Visit the [Release](https://github.com/blackreach/docs/releases/) page for complete list of generated PDF files.
