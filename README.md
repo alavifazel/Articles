@@ -1,4 +1,4 @@
-# Blackreach Project Documents
+# Blackreach Project Docs
 These articles are meant to cover the topics of electrical and electronic engineering in detail. They will start off by articles on mathematics backgrounds and build up to more advanced and real-world applications of EE.
 
 ## Articles
