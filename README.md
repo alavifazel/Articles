@@ -1,10 +1,11 @@
 # Blackreach Project Documents
-These articles are meant to cover the topics of electrical and electronic engineering in-depth. They will start off by articles on mathematics backgrounds and slowly build up to more advanced and real-world application of EE subjects.
+These articles are meant to cover the topics of electrical and electronic engineering in detail. They will start off by articles on mathematics backgrounds and build up to more advanced and real-world application of EE subjects.
 
 ## Articles
-1. [Logarithm and exponential functions.](https://github.com/blackreach/docs/releases/download/v0.1.0/1_Logarithm_and_exponential_functions.pdf)
+1. [Logarithm and exponential functions.](https://github.com/blackreach/docs/releases/download/v0.1.1/1_Logarithm_and_exponential_functions.pdf)
 *This article covers the math behind exponentials and how they appear in circuit analysis*
-2. *TBD*
+2. [RMS and boilerplate software classes](https://github.com/blackreach/docs/releases/download/v0.1.1/2_rms_and_boilerplate_cpp_classes.pdf)
+*This article covers the concept of root mean square (rms) and the reason we define it for AC signals. We also implement some boilerplate C++ classes to work with electrical signals in our future projects and articles* 
 ## Releases
 Visit the [Release](https://github.com/blackreach/docs/releases/) page for complete list of generated PDF files.
 ### Fork it!
