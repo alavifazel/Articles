@@ -1,5 +1,5 @@
 # Blackreach Project Documents
-These articles are meant to cover the topics of electrical and electronic engineering in detail. They will start off by articles on mathematics backgrounds and build up to more advanced and real-world application of EE subjects.
+These articles are meant to cover the topics of electrical and electronic engineering in detail. They will start off by articles on mathematics backgrounds and build up to more advanced and real-world applications of EE.
 
 ## Articles
 1. [Logarithm and exponential functions.](https://github.com/blackreach/docs/releases/download/v0.1.1/1_Logarithm_and_exponential_functions.pdf)
