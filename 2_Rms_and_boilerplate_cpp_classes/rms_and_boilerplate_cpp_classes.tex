@@ -45,11 +45,11 @@
 	
 	This formula gives the power at each point in time. Since $V(t)$ is alternating, the power varies over time as well and doesn't have a fixed value. So to calculate the \textit{average} power we should use integral for this.
 	
-	$$P_{avg} = \frac{1}{R}.\frac{\int_{T0}^{T1} V(t)^2 dt }{T1 - T0}$$
+	$$P_{avg} = \frac{1}{R}.\frac{\int_{T_0}^{T_1} V(t)^2 dt }{T_1 - T_0}$$
 	
-	This is all we need for calculating the average power. However if we take the integral term (with it's denominator $T1 - T0$) and take it's square root, it turns into the \textit{rms} value we defined earlier.
+	This is all we need for calculating the average power. However if we take the integral term (with it's denominator $T_1 - T_0$) and take it's square root, it turns into the \textit{rms} value we defined earlier.
 	
-	$$V_{rms} = \sqrt{\frac{\int_{T0}^{T1} V(t)^2 dt }{T1 - T0}} $$
+	$$V_{rms} = \sqrt{\frac{\int_{T_0}^{T_1} V(t)^2 dt }{T_1 - T_0}} $$
 	
 	Now by having this value, to calculate the average power we should reverse the effect of taking the square root by raise it to power of $2$ (and division by resistivity $R$):
 	
@@ -65,11 +65,11 @@
 	
 	Plugging it into the definition of \textit{rms},
 	
-	$$V_{rms} = \sqrt{\frac{\int_{T0}^{T1} (V_{Max} \sin \omega t) ^ 2}{T1 - T0}}$$
+	$$V_{rms} = \sqrt{\frac{\int_{T_0}^{T_1} (V_{Max} \sin \omega t) ^ 2 dt} {T_1 - T_0}}$$
 	
 	$V_{Max}$ is just a constant and goes out of the square root. So we get:
 	
-	$$V_{rms} = V_{Max} \sqrt{\frac{\int_{T0}^{T1} (\sin \omega t) ^ 2}{T1 - T0}}$$
+	$$V_{rms} = V_{Max} \sqrt{\frac{\int_{T_0}^{T_1} (\sin \omega t) ^ 2 dt }{T_1 - T_0}}$$
 	
 	We also know from basic properties of trigonometric functions :
 	
@@ -78,16 +78,16 @@
 	Substituting the sine term with this property:
 	
 	\begin{align} 
-	V_{rms} = V_{Max} \sqrt{\frac{1}{{T1 - T0}}{\int_{T0}^{T1} \frac{1 + \sin \omega t}{2}}} = \\
-	 V_{Max} \sqrt{\frac{1}{T1 - T0} \left[ \frac{t}{2} - \frac{\sin 2 \omega t}{4 \omega}\right]_{T0}^{T1} }
+	V_{rms} = V_{Max} \sqrt{\frac{1}{{T_1 - T_0}}{\int_{T_0}^{T_1} \frac{1 + \sin \omega t dt}{2}}} = \\
+	 V_{Max} \sqrt{\frac{1}{T_1 - T_0} \left[ \frac{t}{2} - \frac{\sin 2 \omega t}{4 \omega}\right]_{T_0}^{T_1} }
 	\end{align}
 	
 	Now since the range $T_0$ to $T_1$ is one period of the sinusoidal function, the sine integral is just $0$. Therefore:
 		
 	\begin{equation}
 	\begin{gathered}
-	V_{rms} = V_{Max} \sqrt{\frac{1}{T_1 - T_0} \left[ \frac{t}{2} \right]_{T0}^{T1}} = \\
-	V_{Max}\sqrt{\frac{1}{T1 - T0} . \frac{T1 - T2}{2}} = \\
+	V_{rms} = V_{Max} \sqrt{\frac{1}{T_1 - T_0} \left[ \frac{t}{2} \right]_{T_0}^{T_1}} = \\
+	V_{Max}\sqrt{\frac{1}{T_1 - T_0} . \frac{T_1 - T2}{2}} = \\
  V_{Max} \frac{1}{\sqrt{2}}
 	\end{gathered}
 	\end{equation}
