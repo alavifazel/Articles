@@ -183,7 +183,7 @@ public:
         else return func(t - (int)(t/p) * p);
     }), f(1/p), p(p){}
 		
-    double rms() {
+    double getRms() {
         return std::sqrt(1/p * numerical_integration(function, 0, p));
     }
 		
@@ -195,8 +195,23 @@ protected:
 	\end{verbatim}
 
 	This class is also straightforward. It's constructor accepts a function and period in which the function would repeat after that point.
+	Note that in the $getRms$ function we uses \textit{numerical\_integration} for estimating the definite integral. This function can be implemented in various ways. A quick one is to use the trapezoidal method:
 	
-	Example usage:
+	\begin{verbatim}
+double numerical_integration(std::function<double(double)> f,
+                      double a, double b, double N = 10000) {
+    double h = (b - a) / N;
+    double tmp = 0;
+    tmp += f(a);
+    tmp += f(b);
+    while(a < b) {
+        tmp += 2 * f(a);
+        a += h;
+    }
+    return (h/2)*tmp;
+}
+	\end{verbatim}
+	Example usage of \textit{AcSignal}:
 	
 	\begin{verbatim}
 AcSignal s([](double t) {return t*t;}, 2);
