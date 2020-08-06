@@ -195,7 +195,7 @@ protected:
 	\end{verbatim}
 
 	This class is also straightforward. It's constructor accepts a function and period in which the function would repeat after that point.
-	Note that in the $getRms$ function we uses \textit{numerical\_integration} for estimating the definite integral. This function can be implemented in various ways. A quick one is to use the trapezoidal method:
+	Note that in $getRms$ we uses \textit{numerical\_integration} for estimating the definite integral. This function can be implemented in various ways. A quick one is to use the trapezoidal method:
 	
 	\begin{verbatim}
 double numerical_integration(std::function<double(double)> f,
