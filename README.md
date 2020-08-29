@@ -7,9 +7,9 @@ These articles are meant to cover the topics of electrical and electronic engine
 2. [RMS value and boilerplate C++ classes](https://github.com/blackreach/docs/releases/download/v0.1.1/2_Rms_and_boilerplate_cpp_classes.pdf)
 *The concept of root mean square (rms) and the reason we define it for AC signals. We also implement some boilerplate C++ classes to work with electrical signals in our projects* 
 3. AC circuits and phasor diagram -
-*The circuits consist of AC Sources and also phasor diagram for representing sinusoidal functions*
+*The circuits consist of AC Sources and phasor diagram for representing sinusoidal functions*
 4. [Transformers](https://github.com/blackreach/docs/releases/download/v0.1.1/4_Transformers.pdf)
-*The basics of single-phase transformers and the reason it's used in power transmission.*
+*The basics of single-phase transformers and why it's used in power transmission.*
 5. TBD
 ## Releases
 Visit the [Release](https://github.com/blackreach/docs/releases/) page for complete list of generated PDF files.
