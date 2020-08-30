@@ -29,21 +29,21 @@
 	
 	Where $B$ is the magnetic flux density (in units of \textbf{Tesla} or \textit{T} for short) \textit{dot-product}ed with differential surface elements $ds$ (in meters squared).
 	Although this formula can be used to calculate any magnetic flux, in transformers we exclusively deal with fluxes that have (ideally) constant magnetic flux density.
-	Therefore in this case we can simply use this formula instead:
+	Therefore this formula we can be simplified to:
 	
 	$$ \phi = B.A = BA\cos \theta$$
 	
 	($B$ magnetic flux density and $A$ area of surface.)
 	
 	Scientists dedicated a new unit for the flux which is called \textbf{Weber} or \textit{Wb}.
-	Hence flux of 1 Weber is equivalent of a 1 meter surface passing 1 Tesla magnetic fields \textit{perpendicular} at each point of a surface.
+	Hence flux of 1 Weber is equivalent of a 1 meter surface passing 1 Tesla magnetic fields \textit{perpendicular} at each point of the surface.
 	
 	
 	With our definition of magnetic flux for constant $B$ fields, we can write the \textit{law of induction} as:
 
 	$$ \varepsilon = -\frac{d(B.A)}{d t} $$
 	
-	In electric machinery, the instantaneous change in magnetic flux typically happens in one of two cases.
+	In electric machinery, this instantaneous change in magnetic flux typically happens in one of two cases.
 	Either the magnetic field density is constant and the surface is changing (More accurately, the intersection between these constant magnetic density with a surface are rotationally changing); As it happens in \textit{generators}.
 	Where the other case is when the surface is constant but the magnetic field density is changing; As we'll see this happens in the \textit{transformers}.
 
@@ -234,7 +234,7 @@
 	\end{subfigure}
 	\end{figure}
 	
-	Furthermore if the transformer is designed for more than 1 MVA powers, the impedance of resistance element $R_e$ is negligible compared to the inductance $X_e$ therefore can be discarded. 
+	Furthermore if the transformer is designed for 1 MVA powers or more, the impedance of resistance element $R_e$ is negligible compared to the inductance $X_e$ therefore can be discarded. 
 	Hence:
 	
 	\begin{figure}[h!]
@@ -247,7 +247,7 @@
 	This circuit is as simplified as we can get and it's used for modeling power transformers in engineering applications.
 	
 	\subsection{Measuring the values of the equivalent circuit}
-	So far we've seen the equivalent circuit for a real transformer. 
+	So far we've seen the equivalent circuit of a real transformer. 
 	But how can we find the values of it's components? In this regard we perform two physical experiments on our transform namely \textit{open-circuit} and \textit{short-circuit} test. 
 	With these tests, the parameters of equivalent circuit can be measured with a very good approximation.
 	
@@ -298,23 +298,23 @@
 	
 	
 	\subsection{Applications of Transformers}
-	Transformers are used in circuits that need a change in voltage/current level such as audio amplifiers in electronic devices.
+	Transformers are used in circuits that need to change voltage/current levels such as audio amplifiers in electronic devices or in phone chargers that decreases the voltage level to make it suitable for charging the phone's battery.
 	But the most trivial and arguably crucial application of transformers are in power transmission. 
 	
 	We often need to transmit electrical power energy over large distances, due the fact that generators are often apart from the consumers (factories, urban users, etc). These wires that transmit these electrical powers from generators to consumers have some resistivity just like any other wire, and from Ohm's law the voltage drop across these wires are calculated by:
 	
 	$$V = RI$$
 	
-	By knowing the voltage drop, to calculate the power consumption in these wires (which is getting wasted and getting converted to heat) we need to multiply it by its current $I$:
+	By knowing the voltage drop, to calculate the power consumption in these wires (which is getting wasted and converted to heat) we need to multiply it by its current $I$:
 	
 	$$P_{wires} = RI^2 $$
 	
-	Which tells us is that the power loss in the lines are proportional to the square of its current $I$.
+	Which tells us is that the power loss in the lines are proportional to the square of its current $I$ times a constant $R$.
 	This is where transformers come in use.
-	These devices decrease the current (while keeping the same power by increasing voltage level); Hence decreasing the power loss in these wire substantially.
+	These devices decrease the current (while keeping the same power by increasing voltage level); Hence decreasing the power loss in these wires substantially.
 	These kind of transformers are also known as \textit{step up transformers}.
 	
-	Since the end point of the power lines receive huge voltages, we need to use transformers again but this time to decrease the voltage (hence increasing the current).
+	Since the voltage level received on the end point of these power lines are huge, we need to use transformers again but this time to decrease the voltage (hence increasing the current).
 	We do this process to make the voltage level in a safe and usable level. These transformers that decrease the voltage level are also known as \textit{step down transformers}.
 	
 	The types of transformers we discussed in this article are known as \textit{single-phase} transformers and they operate with power lines consisting of a single phase signals. 
