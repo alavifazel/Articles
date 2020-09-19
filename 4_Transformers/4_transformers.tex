@@ -15,31 +15,51 @@
 	In this article we see how they work and why are they crucial in power transmission.
 	\end{abstract}
 	
-	\section{Transformers: The Basics}
+	\section{Introduction}
 	Transformer is a device that takes an AC input and produces an AC output with the same frequency, but a \textit{different voltage level}.
-	Working principal of a transformer is \textit{Faraday's law of induction}:
+	These devices are used in circuits such as audio amplifiers, phone chargers and arguably the most important one, in power transmission.
+	In the example of power transmission, we often need to transmit electrical power energy over large distances due the fact that generators are often apart from the consumers (factories, urban users and etc). These wires that transmit these electrical powers from generators to consumers have some resistivity just like any other wire, and from Ohm's law the voltage drop across these wires are calculated by:
+	
+	$$V = RI$$
+	
+	By knowing the voltage drop, calculating the power consumption of these wires (which is getting wasted and converted to heat) is simply done by multiply by its current $I$:
+	
+	$$P_{wires} = RI^2 $$
+	
+	Which tells us is that the power loss in the lines are proportional to the square of its current $I$ times a constant $R$.
+	This is where transformers come in use.
+	These devices decrease the current (while keeping the same power by increasing voltage level); Hence decreasing the power loss in these wires substantially.
+	These kind of transformers are also known as \textit{step up transformers}.
+	
+	Since the voltage level received on the end point of these power lines are enormous, we need to use transformers again but this time to decrease the voltage (hence increasing the current respectively).
+	We do this process to make the voltage level in a safe and usable level. These transformers that decrease the voltage level are also known as \textit{step down transformers}.
+	
+	\subsection{Transformers: The basics}
+	Working principal of a transformer is \textit{Faraday's law of induction}. This physical law states that if we have a closed-path conductor (such as a loop of wire) and a changing magnetic field is passing though it, there will be an induced \textit{electromotive force}\footnote{Electromotive force or EMF for short, is the force that causes the electrons to move in a wire.} on the wire. Moreover, the strength of this induced EMF  is proportional to the instantaneous rate of change of this magnetic field.	
+	This law is mathematically written as:
 
 	$$ \varepsilon = - \frac{d \phi}{dt} $$
 
-	This physical law states that the induced \textit{electromotive force} (on a wire) is equal to the instantaneous rate of magnetic flux passing through it over time.\footnote[1]{A note here, the negative sign ($-$) merely implies that the induced voltage is in the opposite direction which the changed in flux happened; Hence it has no effect on the magnitude of induced voltage.}
-	\textit{Flux} in general, is a measurement of how much a quantity is passing through a surface (magnetic field strength in this case).
+	Which tells us that induced electromotive force is equal to the first derivative of magnetic \textit{flux} in respect to time.\footnote[1]{A note here, the negative sign ($-$) merely implies that the induced voltage is in the opposite direction which the changed in flux happened; and has no effect on the magnitude of the induced voltage.}
+	
+	Flux in general, is a measurement of how much a quantity is passing through a surface (magnetic field strength in this case).
 	Hence it is defined as:
 	
 	$$ \phi = \iint\limits_S B.ds$$
 	
 	Where $B$ is the magnetic flux density (in units of \textbf{Tesla} or \textit{T} for short) \textit{dot-product}ed with differential surface elements $ds$ (in meters squared).
 	Although this formula can be used to calculate any magnetic flux, in transformers we exclusively deal with fluxes that have (ideally) constant magnetic flux density through a flat surface.
-	Therefore this formula we can be simplified to:
+	Thus we can simplify it to:
 	
 	$$ \phi = B.A = BA\cos \theta$$
 	
 	($B$ magnetic flux density and $A$ area of surface.)
 	
 	Scientists dedicated a new unit for the flux which is called \textbf{Weber} or \textit{Wb}.
-	Hence flux of 1 Weber is equivalent of a 1 meter surface passing 1 Tesla magnetic fields \textit{perpendicular} at each point of the surface.
+	Hence flux of 1 Weber is equivalent of a 1 meters squared surface passing 1 Tesla magnetic fields \textit{perpendicular} at each point of this surface.
 	
 	
-	With our definition of magnetic flux for constant $B$ fields, we can write the \textit{law of induction} as:
+	With our definition of magnetic flux for constant $B$ fields through a flat surface, we can write the \textit{law of induction} as:
 
 	$$ \varepsilon = -\frac{d(B.A)}{d t} $$
 	
@@ -296,30 +316,8 @@
 
 	(As before $P$ and $I$ are the measured power and current respectively, and $U$ the applied voltage from our source.)
 	
-	
-	\subsection{Applications of Transformers}
-	Transformers are used in circuits that need to change voltage/current levels such as audio amplifiers in electronic devices or in phone chargers that decreases the voltage level to make it suitable for charging the phone's battery.
-	But the most trivial and arguably crucial application of transformers are in power transmission. 
-	
-	We often need to transmit electrical power energy over large distances, due the fact that generators are often apart from the consumers (factories, urban users, etc). These wires that transmit these electrical powers from generators to consumers have some resistivity just like any other wire, and from Ohm's law the voltage drop across these wires are calculated by:
-	
-	$$V = RI$$
-	
-	By knowing the voltage drop, to calculate the power consumption in these wires (which is getting wasted and converted to heat) we need to multiply it by its current $I$:
-	
-	$$P_{wires} = RI^2 $$
-	
-	Which tells us is that the power loss in the lines are proportional to the square of its current $I$ times a constant $R$.
-	This is where transformers come in use.
-	These devices decrease the current (while keeping the same power by increasing voltage level); Hence decreasing the power loss in these wires substantially.
-	These kind of transformers are also known as \textit{step up transformers}.
-	
-	Since the voltage level received on the end point of these power lines are huge, we need to use transformers again but this time to decrease the voltage (hence increasing the current).
-	We do this process to make the voltage level in a safe and usable level. These transformers that decrease the voltage level are also known as \textit{step down transformers}.
-	
 	The types of transformers we discussed in this article are known as \textit{single-phase} transformers and they operate with power lines consisting of a single phase signals. 
 	Although the most transformers that are used in practice are \textit{three-phase}, the basic concepts behind them are similar to single-phase ones.
-	
 	These documents are published under an open license (see the project's root directory for more info), and were intended to be part of an open and a collaborative project. Feel free to fork this document, send pull request and also give your feedback. Thanks for reading!
 	
 \end{document}
