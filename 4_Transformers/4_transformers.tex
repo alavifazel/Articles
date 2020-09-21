@@ -22,11 +22,11 @@
 	
 	$$V = RI$$
 	
-	By knowing the voltage drop, calculating the power consumption of these wires (which is getting wasted and converted to heat) is simply done by multiply by its current $I$:
+	By knowing the voltage drop, calculating the power consumption of these wires (which is getting wasted and converted to heat) is simply done by multiplying it by its current $I$:
 	
 	$$P_{wires} = RI^2 $$
 	
-	Which tells us is that the power loss in the lines are proportional to the square of its current $I$ times a constant $R$.
+	Which tells us is that the power loss in the lines are proportional to the square of its current $I$ times the constant $R$.
 	This is where transformers come in use.
 	These devices decrease the current (while keeping the same power by increasing voltage level); Hence decreasing the power loss in these wires substantially.
 	These kind of transformers are also known as \textit{step up transformers}.
@@ -170,7 +170,7 @@
 	
 	An ideal transformer doesn't consume nor generate any power\footnote[1]{The reason for this property comes from physical properties of transformers.
 	Specifically the effect of 'Special Relativity'.
-	Although understanding this theory doesn't directly affect how we understand the working of these devices, we would still have a look at this theory in a separated article and how does the 'magnetic effect' gets created in the first place.};
+	Although understanding this theory doesn't directly affect how we understand the working of these devices, we would still have a look at this theory in a separated article and also how does the 'magnetic effect' gets created in the first place.};
 	Hence the input and output power remain the same.
 	This means that the change in voltage level of output is accompanied by a change in its current level, by amount that the formula of power $P(t) = V(t).I(t)$ gives the same value for the output as input. 
 	
@@ -227,14 +227,14 @@
 	
 	As shown in the diagram, this circuit is made up by both \textit{series} and \textit{parallel} elements.
 	
-	The series elements are the result of the \textit{coils} in each side. More precisely, $R_1$ and $R_2$ are due resistivity and the inductor elements $X_1$ and $X_2$ due the main inductive effect of the coils respectively.
+	The series elements are the result of the \textit{coils} in each side. More precisely, $R_1$ and $R_2$ are due resistivity and the inductor elements $X_1$ and $X_2$ due the main inductive effect of the first and second coils respectively.
 	
 	The parallel elements $R_c$ and $X_m$ are core losses of the transformer.
 	$R_c$ is called \textit{magnetization resistivity} and $X_m$ is the effect of \textit{flux leakage}.
 	Flux leakage is the flux that doesn't get fully captured by the other side (in some sense it gets "wasted").
-	We can think of this leakage, analogous by having a simple inductor without it's flux getting passed to the other one. Notice that these two elements are in parallel to each other because the effect these impedances affect independently yet simultaneous with each other.
+	We can think of this leakage, analogous by having a simple inductor without it's flux getting passed to the other one. Notice that these two elements are in parallel to each other because these impedances, affect the input voltage independently yet simultaneous.
 	
-	This complicated equivalent circuit can be simplified for power transformers with few approximations.
+	This somewhat complicated equivalent circuit can be simplified for power transformers with a few approximations.
 	In transformers the current that flows through the parallel elements ($R_c$ and $X_m$) is a fraction of the current in series elements.
 	With this physical property we can remove the parallel elements in practical sense, thus simplifying the equivalent circuit greatly to:
 		
