@@ -1,4 +1,4 @@
-# PowerNX Docs
+# Docs
 These articles are meant to cover the topics of electrical and electronic engineering in detail. They will start off by articles on mathematics backgrounds and build up to more advanced and real-world applications of EE.
 
 ## Articles
@@ -17,4 +17,4 @@ Visit the [Release](https://github.com/PowerNX/docs/releases/) page for complete
 These documents are intended to be part of an open and collaborative project. Feel free to fork them and/or send pull requests!
 
 ### License
-These documents are published under the **Apache License 2.0**. Visit the [LICENSE](https://github.com/PowerNX/docs/blob/master/LICENSE) file for more info.
+These documents are published under the **Apache License 2.0**. Visit the [LICENSE](https://github.com/blackreach/docs/blob/master/LICENSE) file for more info.
