@@ -1,6 +1,7 @@
 These articles are meant to cover the topics of electrical and electronic engineering in detail. They will start off by articles on mathematics backgrounds and build up to more advanced and real-world applications of EE.
 
 ## Articles
+0. [Discontinuity of derivatives](https://github.com/PowerNX/docs/releases/download/v0.1.1/0_Discontinuity_of_derivatives.pdf)
 1. [Logarithm and exponential functions.](https://github.com/PowerNX/docs/releases/download/v0.1.1/1_Logarithm_and_exponential_functions.pdf)
 *The math behind exponentials and how they appear in circuit analysis*
 2. [RMS value and boilerplate C++ classes](https://github.com/PowerNX/docs/releases/download/v0.1.1/2_Rms_and_boilerplate_cpp_classes.pdf)
