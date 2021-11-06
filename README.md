@@ -1,8 +1,6 @@
 These articles are meant to cover the topics of electrical and electronic engineering in detail. They will start off by articles on mathematics backgrounds and build up to more advanced and real-world applications of EE.
 
 ## Articles
-0. [Miscellaneous_math_concepts](https://github.com/PowerNX/docs/releases/download/v0.1.1/1_Misc_math_concepts.pdf)
-*Covers general math concepts which are useful for our study.*
 1. [Discontinuity of derivatives](https://github.com/PowerNX/docs/releases/download/v0.1.1/0_Discontinuity_of_derivatives.pdf)
 *Answering the question of "how much discontinuous our derivative functions can be"*
 2. [Logarithm and exponential functions.](https://github.com/PowerNX/docs/releases/download/v0.1.1/1_Logarithm_and_exponential_functions.pdf)
