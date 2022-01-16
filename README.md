@@ -11,7 +11,8 @@ These articles are meant to cover the topics of electrical and electronic engine
 *The circuits consist of AC Sources and phasor diagram for representing sinusoidal functions*
 5. [Transformers](https://github.com/PowerNX/docs/releases/download/v0.1.1/4_Transformers.pdf)
 *The basics of single-phase transformers and why it's used in power transmission.*
-6. [The idea behind UNIX numeric file permissions](https://github.com/PowerNX/docs/releases/download/v0.1.1/4_The_idea_behind_UNIX_numeric_file_permissions.pdf)
+6. [The idea behind UNIX numeric file permissions](https://github.com/PowerNX/docs/releases/download/v0.1.1/6_The_idea_behind_UNIX_numeric_file_permissions.pdf)
+*Generalized idea behind the numbering system used for representing UNIX file permissions
 7. TBD
 
 ## Releases
