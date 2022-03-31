@@ -6,8 +6,6 @@
 3.  [Baire-1 functions](#org693b0bd)
 4.  [Baire-Osgood theorem](#org1922c46)
 
-
-
 <a id="org6b1a708"></a>
 
 # Prologue
@@ -28,7 +26,7 @@ Or the famous Newton's law:
 A question that I was prompted with, was that how much discontinuous derivative function can be?
 Because the fundamental theorem of Calculus (Part II) tells us that:
 if a function has derivatives at all point (in its domain), and the values of these derivatives are **changing continuously**, then integral cancels the effect of differentiation and gives back the original function.
-But does having the equation \[f(x) = \frac{dy}{dx}\] automatically implies that \[f(x)\] can only be continuous? 
+But does having the equation $f(x) = \frac{dy}{dx}$ automatically implies that $f(x)$ can only be continuous? 
 If not, how much discontinuous our function can be?
 
 I've spent a good amount of time looking for this starightforward question, which doesn't get addressed in a standard Calculus course (at least in the engineering curriculums).
@@ -40,16 +38,14 @@ But first, let's first start with a classic example where discontinuity of deriv
 
 # Discontinuity of derivative at a single point
 
-The function below is a well-known function that has derivative at all points, and the value of these derivatives are all continuous except at a single point, \(x = 0\).
+The function below is a well-known function that has derivative at all points, and the value of these derivatives are all continuous except at a single point, $x = 0$.
 
 \begin{equation}
-\[   
 f(x) = 
      \begin{cases}
-       \equation{x^2 sin(1/x)} &\quad\text{if }\equation{x \neq 0} \\
-       \equation{0} &\quad\text{if }\equation{x = 0} \\
+       x^2 sin(1/x) &\quad\text{if } x \neq 0 \\
+       0 &\quad\text{if } x = 0 \\
      \end{cases}
-\]
 \end{equation}
 
 It has the following graph:
@@ -59,13 +55,11 @@ It has the following graph:
 The derivative of this function (by plugging into the definition of derivative) is:
 
 \begin{equation}
-\[   
 f'(x) = 
      \begin{cases}
-       \equation{x^2 sin(1/x) - cos(1/x)} &\quad\text{if }\equation{x \neq 0} \\
-       \equation{0} &\quad\text{if }\equation{x = 0} \\
+       x^2 sin(1/x) - cos(1/x) &\quad\text{if } x \neq 0 \\
+       0 &\quad\text{if } x = 0 \\
      \end{cases}
-\]
 \end{equation}
 
 With the following graph:
@@ -92,16 +86,14 @@ Now *how much* discontinuous a derivative function can be?
 For example, the following function:
 
 \begin{equation}
-\[   
 f(x) = 
      \begin{cases}
-       \equation{1} &\quad\text{if }\equation{x} \text{ rational} \\
-       \equation{0} &\quad\text{if }\equation{x} \text{ irrational} \\
+       1 &\quad\text{if } x \text{rational } \\
+       0 &\quad\text{if } x \text{irrational } \\
      \end{cases}
-\]
 \end{equation}
 
-Has second type discontinuity at every point \(x\) in \(\mathbb{R}\).
+Has second type discontinuity at every point \(x\) in $$\mathbb{R}$$.
 Can this function be a derivative function?
 The answer is *no*, because all derivative functions are said to be of *Baire class 1 functions* (also written as "Baire-1 function") in topology.
 And there are restrictions on how much discontinuous Baire-1 functions can be.
@@ -115,7 +107,7 @@ Let's first define what Baire-1 functions are.
 Baire-1 function that we mentioned in the previous section, has the following definition:
 <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
 
-**Def.** If \[f(x) = \lim_{n\to\infty}{f_n(x)}\] exists (as a real number) for each \[x \in \mathbb{R}\], then the function \[f\] is Baire-1 function.
+**Def.** If $$f(x) = \lim_{n\to\infty}{f_n(x)}$$ exists (as a real number) for each $$x \in \mathbb{R}$$, then the function \[f\] is Baire-1 function.
 
 Derivative functions are Baire-1 class functions, because from elementary Calculus we know that:
 
@@ -164,7 +156,7 @@ This set is constructed as below:
 
 1.  Take the interval of [1,0] and divide it into 3 pieces.
 2.  Remove the middle piece (excluding its endpoints).
-3.  Leave the union of the two remaining parts (\([0,\frac{1}{3}] \cup [\frac{2}{3},1]\))
+3.  Leave the union of the two remaining parts ($0,\frac{1}{3}] \cup [\frac{2}{3},1]$)
 4.  **Indefinitely** repeat the 2nd and 3rd step of each remaining part.
     
     Contruction of a Cantor set is visualized as below:
@@ -189,13 +181,16 @@ Therefore, if our function is differentiable everywhere, the derivative function
 
 And moreover:
 
-**Theorem** Let \(f\) be a real-valued function on \(\mathbb{R}\). The set of points of discontinuity of \(f\) is of first category (meagre set) if and only if \(f\) is continuous at a dense set of points.
+**Theorem** Let \(f\) be a real-valued function on $$\mathbb{R}$$. The set of points of discontinuity of \(f\) is of first category (meagre set) if and only if \(f\) is continuous at a dense set of points.
 
 One thing to mention in the end is that even though discontinuity points are meagre set, a derivative function can be non-integrable in the classical definition of integral i.e. Riemann integral.
 An example of such a function is called *Volterra's function*.
 This function is differentiable everywhere but it is discontiuous on a set of nowhere dense but positive measures (uncountably many).
 Therefore, it is not Riemann integralable.
 
+# References
+John C. Oxtoby, *Measure and Category*, 2nd edition - Theorem 7.3, Page 32
+Neal L. Carothers, *Real Analysis, Cambridge University* - Chapter 11, Theorem 11.20, Page 183
 
 # Footnotes
 
