@@ -3,9 +3,9 @@
 
 1.  [Natural Logarithm](#natural-logarithm)
     1.  [Logarithm in "other bases"](#logarithm-in-other-bases)
-2.  [The constant \(e\)](#the-constant-e)
+2.  [The constant $e$](#the-constant-e)
 3.  [The Function $\mathbf{e^x}$](#the-function-mathbfex)
-    1.  [Applications of the Function \(e^x\)](#applications-of-the-function-ex)
+    1.  [Applications of the Function $e^x$](#applications-of-the-function-ex)
 4.  [What's Next?](#whats-next)
 
 
@@ -20,25 +20,25 @@ $$
     f(ax) = f(a) + f(x)
 $$
 
-(\(f\) as a function of \(x\) and \(a\) as an arbitrary constant.)
+($f$ as a function of $x$ and $a$ as an arbitrary constant.)
 
 Why do we want such a function? Because it has numerous important
 properties that we will discuss later in this document. For now let's
-continue finding such a function. A function \(f\) that would satisfy an
+continue finding such a function. A function $f$ that would satisfy an
 equation such as above, could have many different forms and finding them
 all would be a difficult or even an impossible task. What we want to do
 instead, is to add more properties to the equation that would narrow
 down the function we are looking for. The first property is that we
-don't want \(f\) to be a function that maps all of its inputs to \(0\);
+don't want $f$ to be a function that maps all of its inputs to $0$;
 Because such a function *would* satisfy the equation (1), but it
 wouldn't be useful at all. The next important property that we want to
-add is to find an \(f\) that would be continuous and differentiable<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. In other words, Finding an \(f\) that would make the derivative (in respect to \(x\)) of the right-hand side and
+add is to find an $f$ that would be continuous and differentiable[^1]. In other words, Finding an $f$ that would make the derivative (in respect to $x$) of the right-hand side and
 left-hand side of equation (1), equal. If we find such a function that
 for a range of inputs $\frac{d}{dx}f(ax)$ gives **equal** values as
 $\frac{d}{dx}(f(a) + f(x))$, we can use the fundamental theorem of
 Calculus to find the function itself. The function found in this
 procedure not only could be an answer for equation (1), moreover it
-would be differentiable for that range of the values of \(x\). Now to find
+would be differentiable for that range of the values of $x$. Now to find
 such a function let's differentiate both sides of equation (1). We get:
 
 $$
@@ -46,11 +46,13 @@ $$
 $$
 
 Now $\frac{d}{dx} f(a)$ is just $0$ (because it's not a function of
-\(x\)), therefore we get:
+$x$), therefore we get:
 
-$\frac{d}{dx} f(ax) = \frac{d}{dx} f(x)$
+$$
+\frac{d}{dx} f(ax) = \frac{d}{dx} f(x)
+$$
 
-What function \(f\) would make the above equation valid? Let's
+What function $f$ would make the above equation valid? Let's
 differentiate left side and see what we get. By implicit
 differentiation:
 
@@ -59,82 +61,66 @@ $$
 $$
 
 Now if $\frac{d}{dx} f(ax)$ yields the reciprocal of it's argument
-\(ax\), namely $(\frac{1}{ax}$ then:
+$ax$, namely ($\frac{1}{ax}$) then:
 
 $$\frac{d}{dx} f(ax) =  a . \frac{1}{ax} = \frac{1}{x} = \frac{d}{dx} f(x)$$
 
-We now know the *derivative* of \(f\) should give the reciprocal of it's
-argument, then \(f\) itself is the *integration* of the reciprocal of it's
+We now know the *derivative* of $f$ should give the reciprocal of it's
+argument, then $f$ itself is the *integration* of the reciprocal of it's
 argument:
 
 $$f(x) = \int_{c}^{x} (1/t) dt$$
 
-We are almost there. To recap, the function \(f\) that we got so far has
+We are almost there. To recap, the function $f$ that we got so far has
 the following property:
 
 $$\frac{d}{dx} f(ax) = \frac{d}{dx} f(x)$$
 
 However, we initially differentiated the equation (1) and we got to this
 function so far. If the equation had **any other** constant beside
-\(ln(a)\), it would still cancel out in the differentiation process. So by
+$ln(a)$, it would still cancel out in the differentiation process. So by
 the (second) fundamental theorem of Calculus, integrating both sides,
 give the functions *plus* some constant that it could have any value.
 Therefore for the function we got so far:
 
 $$f(ax) = f(x) + C$$
 
-For some constant \(C\). However if we define \(f\) as the integral of \(1/t\)
-from **" to** " instead of an **"arbitrary to "**, namely:
+For some constant $C$. If we define $f$ as the integral of $1/t$
+from $1$ **to** $x$ instead of an **arbitrary to**, namely:
 
 $$f(x) = \int_{1}^{x} (1/t) dt$$
 
-Not only the derivative of \(f(ax)\) would equal to derivative of \(f(x)\),
+Not only the derivative of $f(ax)$ would equal to derivative of $f(x)$,
 moreover:
 
 $$f(ax) = f(x) + f(a)$$
 
-Because by letting \(x = 1\) we get:
+Because by letting $x = 1$ we get:
 
 $$f(a) = f(1) + C$$ $$f(a) = 0 + C$$ $$f(a) = C$$
 
-And \(f(ax)\) for other $x$s besides \(x = 1\) would still give this
-constant - which is equal to \(f(a)\) - plus \(f(x)\). We are now done.
+And $f(ax)$ for other $x$s besides $x = 1$ would still give this
+constant - which is equal to $f(a)$ - plus $f(x)$. 
 
 Such a function has a special name in math and its called **natural
-logarithm** and it's denoted by \(ln\):
+logarithm** and it's denoted by $ln$:
 
 $$ln(x) = \int_{1}^{x} (1/t) dt$$
 
 
 <a id="logarithm-in-other-bases"></a>
 
-## Logarithm in "other bases"
-
-If $b > 0$, $b \neq 1$ and if $x > 0$, the logarithm of \(x\) to the
-"base" \(b\) is defined as:
-
-$$\log_b x = \frac{ln x}{ln b}$$
-
-A common base \(b\) is 10. Example:
-
-$$\log_{10} 1000 = \frac{ln 1000}{ln 10} = \frac{\ln (10 * 10 * 10)}{ \ln 10} = \frac{3 \ln 10}{\ln 10} = 3$$
-
-or for example another widely used base, logarithm in base 2:
-
-$$\log_{2} 8 = \frac{ln 8}{ln 2} = \frac{\ln (2 * 2 * 2)}{ \ln 2} = \frac{3 \ln 2}{\ln 2} = 3$$
-
-
 <a id="the-constant-e"></a>
 
-# The constant \(e\)
+# The constant $e$
 
-The constant \(e\) is a number that we define as the value in which
+The constant $e$ is a number that we define as the value in which
 $\ln(e) = 1$. Plugging it in the definition of the natural logarithm, it
 means it's a number which the area under the curve of $\frac{1}{x}$
-*from \(1\) to that number \(e\)* is 1.
+*from $1$ to that number $e$* is 1.
 
 Now a property of natural logarithm that we left out is the following
-property, for a *rational* \(n\):
+property, for a *rational* $n$:
 
 $$\ln(x^n) = n\ln(x)$$
 
@@ -204,7 +190,7 @@ Which means:
 $$\frac{d}{dx} e^x = e^x$$
 
 This function is called the exponential function and is also denoted by
-$\exp(x)$. This function is the solution to *\(y' = y\)*. In other words,
+$\exp(x)$. This function is the solution to *$y' = y$*. In other words,
 what function gives the same values as it's instantaneous rate of
 change? $e^x$.
 
@@ -250,7 +236,7 @@ Therefore $V_{battery} = \varepsilon$. For the resistor by Ohm's law,
 voltage drop across the resistor should be proportional to a constant,
 times the current flowing through it: $V_{resistor} = Ri$. As for the
 inductor, voltage drop across it is proportional to a constant times the
-*instantaneous rate of change* of it's current over time<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. Hence:
+*instantaneous rate of change* of it's current over time[^2]. Hence:
 $V_{inductor} = L\frac{di}{dt}$. Now let's plug all of these into the
 equation.
 
@@ -303,25 +289,56 @@ Plotting this function we get:
 
 Similar situation would happen if we had a capacitor instead of an
 inductor. With the difference that the part in which the derivative
-appears (in this case derivative of charge \(Q\) over time instead of
-current \(i\) over time), would be for the resistor. Namely, if we had a
+appears (in this case derivative of charge $Q$ over time instead of
+current $i$ over time), would be for the resistor. Namely, if we had a
 capacitor instead of an inductor in this circuit, we should have gotten:
 
 $$\varepsilon - Ri(t) - \frac{Q}{C} = 0$$
 
 Because the voltage drop across a capacitor is proportional to the
-accumulated charges \(Q\) in one plate over a constant \(C\) (capacitance).
-And that number, should be equal to the resistivity \(R\), times the
+accumulated charges $Q$ in one plate over a constant \(C\) (capacitance).
+And that number, should be equal to the resistivity $R$, times the
 current for the resistor part (Ohm's law). Current by definition is just
-the change of \(Q\) overtime ($i(t) = \frac{dq}{dt}$). Consequently,
-solving that differential equation should give us the change of \(Q\) over
-time (instead of \(i\)) as an exponential.
+the change of $Q$ overtime ($i(t) = \frac{dq}{dt}$). Consequently,
+solving that differential equation should give us the change of $Q$ over
+time (instead of $i$) as an exponential.
 
 In future tutorials we shall discuss and analyze the circuits consisting
 of both capacitor and inductor beside resistors and power supplies. For
 now, our goal was to get the big picture of the math behind this
 circuits and solve a basic one.
 
+# Notes
+
+## Logarithm in "other bases"
+
+If $b > 0$, $b \neq 1$ and if $x > 0$, the logarithm of $x$ to the
+"base" $b$ is defined as:
+
+$$\log_b x = \frac{ln x}{ln b}$$
+
+A common base $b$ is 10. Example:
+
+$$\log_{10} 1000 = \frac{ln 1000}{ln 10} = \frac{\ln (10 * 10 * 10)}{ \ln 10} = \frac{3 \ln 10}{\ln 10} = 3$$
+
+or for example another widely used base, logarithm in base 2:
+
+$$\log_{2} 8 = \frac{ln 8}{ln 2} = \frac{\ln (2 * 2 * 2)}{ \ln 2} = \frac{3 \ln 2}{\ln 2} = 3$$
+
+
+
+[^1]: Because in the wide areas of mathematics we are only interested
+in continuous and differentiable functions.
+
+[^2]: The exact reason why the induced voltage of an inductor (or more
+generally Faraday's law of induction) is proportional to rate of
+change of it's current over time comes from a more general theory
+which is the "theory of relativity". We shall discuss these
+topics in the later articles in-details. But in basic terms when
+electrons gain speed they (and space between them) gets
+contracted; Thus producing "magnetic effect". Changing of this
+magnetic effect causes instant accumulation of electrons which
+EMF gets produced.
 
 <a id="whats-next"></a>
 
@@ -339,17 +356,4 @@ and a collaborative project. Feel free to fork this document, send pull
 request and also give your feedback. Thanks for reading!
 
 
-# Notes
 
-<sup><a id="fn.1" href="#fnr.1">1</a></sup> Because in the wide areas of mathematics we are only interested
-in continuous and differentiable functions.
-
-<sup><a id="fn.2" href="#fnr.2">2</a></sup> The exact reason why the induced voltage of an inductor (or more
-generally Faraday's law of induction) is proportional to rate of
-change of it's current over time comes from a more general theory
-which is the "theory of relativity". We shall discuss these
-topics in the later articles in-details. But in basic terms when
-electrons gain speed they (and space between them) gets
-contracted; Thus producing "magnetic effect". Changing of this
-magnetic effect causes instant accumulation of electrons which
-EMF gets produced.
