@@ -4,7 +4,7 @@
 1.  [Natural Logarithm](#natural-logarithm)
     1.  [Logarithm in "other bases"](#logarithm-in-other-bases)
 2.  [The constant \(e\)](#the-constant-e)
-3.  [The Function \(\mathbf{e^x}\)](#the-function-mathbfex)
+3.  [The Function $\mathbf{e^x}$](#the-function-mathbfex)
     1.  [Applications of the Function \(e^x\)](#applications-of-the-function-ex)
 4.  [What's Next?](#whats-next)
 
@@ -15,8 +15,10 @@
 
 Let's find a function that would satisfy the following equation:
 
-\[\label{simple_equation}
-    f(ax) = f(a) + f(x)\]
+$$
+\label{simple_equation}
+    f(ax) = f(a) + f(x)
+$$
 
 (\(f\) as a function of \(x\) and \(a\) as an arbitrary constant.)
 
@@ -30,45 +32,47 @@ down the function we are looking for. The first property is that we
 don't want \(f\) to be a function that maps all of its inputs to \(0\);
 Because such a function *would* satisfy the equation (1), but it
 wouldn't be useful at all. The next important property that we want to
-add which makes a lot sense too, is to find an \(f\) that would be
-continuous and differentiable<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. In other words, Finding an \(f\) that
-would make the derivative (in respect to \(x\)) of the right-hand side and
+add is to find an \(f\) that would be continuous and differentiable<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. In other words, Finding an \(f\) that would make the derivative (in respect to \(x\)) of the right-hand side and
 left-hand side of equation (1), equal. If we find such a function that
-for a range of inputs \(\frac{d}{dx}f(ax)\) gives **equal** values as
-\(\frac{d}{dx}(f(a) + f(x))\), we can use the fundamental theorem of
+for a range of inputs $\frac{d}{dx}f(ax)$ gives **equal** values as
+$\frac{d}{dx}(f(a) + f(x))$, we can use the fundamental theorem of
 Calculus to find the function itself. The function found in this
 procedure not only could be an answer for equation (1), moreover it
 would be differentiable for that range of the values of \(x\). Now to find
 such a function let's differentiate both sides of equation (1). We get:
 
-\[\frac{d}{dx} f(ax) = \frac{d}{dx} f(a) + \frac{d}{dx} f(x)\]
+$$
+\frac{d}{dx} f(ax) = \frac{d}{dx} f(a) + \frac{d}{dx} f(x)
+$$
 
-Now \(\frac{d}{dx} f(a)\) is just \(0\) (because it's not a function of
+Now $\frac{d}{dx} f(a)$ is just $0$ (because it's not a function of
 \(x\)), therefore we get:
 
-\[\frac{d}{dx} f(ax) = \frac{d}{dx} f(x)\]
+$\frac{d}{dx} f(ax) = \frac{d}{dx} f(x)$
 
 What function \(f\) would make the above equation valid? Let's
 differentiate left side and see what we get. By implicit
 differentiation:
 
-\[\frac{d}{dx} f(ax) = \frac{d}{dx} ax \frac{d}{dx} f(ax) = a \frac{d}{dx} f(ax)\]
+$$
+\frac{d}{dx} f(ax) = \frac{d}{dx} ax \frac{d}{dx} f(ax) = a \frac{d}{dx} f(ax)
+$$
 
-Now if \[\frac{d}{dx} f(ax)\] yields the reciprocal of it's argument
-\(ax\), namely \(\frac{1}{ax}\) then:
+Now if $\frac{d}{dx} f(ax)$ yields the reciprocal of it's argument
+\(ax\), namely $(\frac{1}{ax}$ then:
 
-\[\frac{d}{dx} f(ax) =  a . \frac{1}{ax} = \frac{1}{x} = \frac{d}{dx} f(x)\]
+$$\frac{d}{dx} f(ax) =  a . \frac{1}{ax} = \frac{1}{x} = \frac{d}{dx} f(x)$$
 
 We now know the *derivative* of \(f\) should give the reciprocal of it's
 argument, then \(f\) itself is the *integration* of the reciprocal of it's
 argument:
 
-\[f(x) = \int_{c}^{x} (1/t) dt\]
+$$f(x) = \int_{c}^{x} (1/t) dt$$
 
 We are almost there. To recap, the function \(f\) that we got so far has
 the following property:
 
-\[\frac{d}{dx} f(ax) = \frac{d}{dx} f(x)\]
+$$\frac{d}{dx} f(ax) = \frac{d}{dx} f(x)$$
 
 However, we initially differentiated the equation (1) and we got to this
 function so far. If the equation had **any other** constant beside
@@ -77,21 +81,21 @@ the (second) fundamental theorem of Calculus, integrating both sides,
 give the functions *plus* some constant that it could have any value.
 Therefore for the function we got so far:
 
-\[f(ax) = f(x) + C\]
+$$f(ax) = f(x) + C$$
 
 For some constant \(C\). However if we define \(f\) as the integral of \(1/t\)
 from **" to** " instead of an **"arbitrary to "**, namely:
 
-\[f(x) = \int_{1}^{x} (1/t) dt\]
+$$f(x) = \int_{1}^{x} (1/t) dt$$
 
 Not only the derivative of \(f(ax)\) would equal to derivative of \(f(x)\),
 moreover:
 
-\[f(ax) = f(x) + f(a)\]
+$$f(ax) = f(x) + f(a)$$
 
 Because by letting \(x = 1\) we get:
 
-\[f(a) = f(1) + C\] \[f(a) = 0 + C\] \[f(a) = C\]
+$$f(a) = f(1) + C$$ $$f(a) = 0 + C$$ $$f(a) = C$$
 
 And \(f(ax)\) for other $x$s besides \(x = 1\) would still give this
 constant - which is equal to \(f(a)\) - plus \(f(x)\). We are now done.
@@ -99,25 +103,25 @@ constant - which is equal to \(f(a)\) - plus \(f(x)\). We are now done.
 Such a function has a special name in math and its called **natural
 logarithm** and it's denoted by \(ln\):
 
-\[ln(x) = \int_{1}^{x} (1/t) dt\]
+$$ln(x) = \int_{1}^{x} (1/t) dt$$
 
 
 <a id="logarithm-in-other-bases"></a>
 
 ## Logarithm in "other bases"
 
-If \(b > 0\), \(b \neq 1\) and if \(x > 0\), the logarithm of \(x\) to the
+If $b > 0$, $b \neq 1$ and if $x > 0$, the logarithm of \(x\) to the
 "base" \(b\) is defined as:
 
-\[\log_b x = \frac{ln x}{ln b}\]
+$$\log_b x = \frac{ln x}{ln b}$$
 
 A common base \(b\) is 10. Example:
 
-\[\log_{10} 1000 = \frac{ln 1000}{ln 10} = \frac{\ln (10 * 10 * 10)}{ \ln 10} = \frac{3 \ln 10}{\ln 10} = 3\]
+$$\log_{10} 1000 = \frac{ln 1000}{ln 10} = \frac{\ln (10 * 10 * 10)}{ \ln 10} = \frac{3 \ln 10}{\ln 10} = 3$$
 
 or for example another widely used base, logarithm in base 2:
 
-\[\log_{2} 8 = \frac{ln 8}{ln 2} = \frac{\ln (2 * 2 * 2)}{ \ln 2} = \frac{3 \ln 2}{\ln 2} = 3\]
+$$\log_{2} 8 = \frac{ln 8}{ln 2} = \frac{\ln (2 * 2 * 2)}{ \ln 2} = \frac{3 \ln 2}{\ln 2} = 3$$
 
 
 <a id="the-constant-e"></a>
@@ -125,101 +129,107 @@ or for example another widely used base, logarithm in base 2:
 # The constant \(e\)
 
 The constant \(e\) is a number that we define as the value in which
-\(\ln(e) = 1\). Plugging it in the definition of the natural logarithm, it
-means it's a number which the area under the curve of \(\frac{1}{x}\)
+$\ln(e) = 1$. Plugging it in the definition of the natural logarithm, it
+means it's a number which the area under the curve of $\frac{1}{x}$
 *from \(1\) to that number \(e\)* is 1.
 
 Now a property of natural logarithm that we left out is the following
 property, for a *rational* \(n\):
 
-\[\ln(x^n) = n\ln(x)\]
+$$\ln(x^n) = n\ln(x)$$
 
 Proof (by power rule):
 
-\[\frac{d}{dx} \ln(x^n) = \frac{1}{x^n} . \frac{d}{dx} x^n = \frac{n}{x^n} . x^{n-1} = \frac{n}{x} = n \ln x\]
+$$\frac{d}{dx} \ln(x^n) = \frac{1}{x^n} . \frac{d}{dx} x^n = \frac{n}{x^n} . x^{n-1} = \frac{n}{x}$$
+
+Therefore:
+
+$$
+\ln(x^n) = n \ln x
+$$
 
 Even though the following property is true only for the rational powers
-of \(x^n\), we can "fill in" for the irrational numbers as well. By
+of $x^n$, we can "fill in" for the irrational numbers as well. By
 defining the output for the irrational powers as the limit approaching
 to the closest neighboring rational power. Graphically we fill in the
 wholes in the graph for irrational numbers.
 
-To recap, we have found a function and we called it \(\ln(x)\) which has
+To recap, we have found a function and we called it $\ln(x)$ which has
 the following properties:
 
-& 1) (ax) = (a) + (x) &  
-& 2) (x)' = &  
-& 3) (x<sup>n</sup>) = n x &
+
+1) $\ln(ax) = \ln(a) + \ln(x)$
+2) $\ln(x)' = \frac{1}{x}$
+3) $\ln(x^n) = n \ln(x)$
 
 Now we want to find the *inverse* of the natural logarithm. To do so,
 what expression should we give to the natural logarithm that it would
-give us the term \(x\) itself? Such an expressions would be the inverse of
-the natural logarithm. This expression is \(e^x\); Because:
+give us the term $x$ itself? Such an expressions would be the inverse of
+the natural logarithm. This expression is $e^x$; Because:
 
-\[\ln e^x = x \ln e = x\]
+$$\ln e^x = x \ln e = x$$
 
-Therefore, \(e^x\) is defined as the inverse of the natural logarithm:
+Therefore, $e^x$ is defined as the inverse of the natural logarithm:
 
-\[e^x = \ln ^{-1} x\]
+$$e^x = \ln ^{-1} x$$
 
 Now we will discover one of the most significant mathematical properties
-of this function, which appears frequently in the universe.
+of this function, which appears frequently in nature.
 
 
 <a id="the-function-mathbfex"></a>
 
-# The Function \(\mathbf{e^x}\)
+# The Function $\mathbf{e^x}$
 
-The function \(e^x\) has numerous important properties. One of the most
+The function $e^x$ has numerous important properties. One of the most
 important ones, which we use over and over in circuitry and other fields
-as well is *the derivative of the function \(e^x\) which is \(e^x\) itself*.
+as well is *the derivative of the function $e^x$ which is $e^x$ itself*.
 
-Proof: \[y = e^x\]
+Proof: $y = e^x$
 
-Therefore (by the 3nd property of \(\ln\)):
+Therefore (by the 3nd property of $\ln$):
 
-\[\ln e^x = x\]
+$$\ln e^x = x$$
 
 Taking implicit differentiation of both-sides (by the 2nd property of
-\(\ln\)):
+$\ln(x)$):
 
-\[\frac{d}{dx} \ln y = \frac{d}{dx}x\]
-\[\frac{1}{y} \frac{d}{dx} y = 1\]
+$$\frac{d}{dx} \ln y = \frac{d}{dx}x$$
+$$\frac{1}{y} \frac{d}{dx} y = 1$$
 
-Finally: \[\frac{d}{dx} y = y\]
+Finally: $$\frac{d}{dx} y = y$$
 
 Which means:
 
-\[\frac{d}{dx} e^x = e^x\]
+$$\frac{d}{dx} e^x = e^x$$
 
 This function is called the exponential function and is also denoted by
-\(\exp(x)\). This function is the solution to *\(y' = y\)*. In other words,
+$\exp(x)$. This function is the solution to *\(y' = y\)*. In other words,
 what function gives the same values as it's instantaneous rate of
-change? \(e^x\).
+change? $e^x$.
 
 Concept of logarithms and exponential function could be approached in
-many different ways. One can differentiate the function \(a^x\) via
+many different ways. One can differentiate the function $a^x$ via
 plugging it into the definition of the derivative. Using this method we
 get a function times a weird-looking limit. Thus continuing to prove
-that this limit is the inverse of the famous constant \(e\) to the power
-of \(a\); Then we shall call this inverse function as the logarithm in
-base \(e\). Another way which we used in this article is by defining the
-logarithm *first* then defining the constant \(e\) as a number that if we
-give to the natural logarithm, it yields \(1\). Anyhow all the different
+that this limit is the inverse of the famous constant $e$ to the power
+of $a$; Then we shall call this inverse function as the logarithm in
+base $e$. Another way which we used in this article is by defining the
+logarithm *first* then defining the constant $e$ as a number that if we
+give to the natural logarithm, it yields $1$. Anyhow all the different
 ways lead to the same concepts but we used the latter one which we think
 is the right way to explain these topics.
 
-
 <a id="applications-of-the-function-ex"></a>
 
-## Applications of the Function \(e^x\)
+## Applications of the Function $e^x$
 
 We now examine a case which the exponential function appear in circuit
 analysis. Assume a simple circuit consisting of a battery, a resistor
 and an inductor. These elements are connected in series and has the
 value as shown in the following schematic:
 
-![img](circuit1.png)
+![An example RL Circuit](circuit1.png){width=350px}
 
 We now want to analyze this circuit; This means that our goal is to find
 the voltage drops (of each element) and the currents flowing through
@@ -231,45 +241,45 @@ Let's start analyzing this circuit step-by-step.
 By the law of conservation of energy, adding up the voltage drops of
 each element should sum up to zero. This means:
 
-\[V_{battery} + V_{resistor} + V_{inductor} = 0\]
+$$V_{battery} + V_{resistor} + V_{inductor} = 0$$
 
 Now this let's substitute corresponding values of each term. Voltage
 drop across a battery is constant over time and in this example is 5;
-Let's denote this constant \(\varepsilon\) for a general battery.
-Therefore \(V_{battery} = \varepsilon\). For the resistor by Ohm's law,
+Let's denote this constant $\varepsilon$ for a general battery.
+Therefore $V_{battery} = \varepsilon$. For the resistor by Ohm's law,
 voltage drop across the resistor should be proportional to a constant,
-times the current flowing through it: \(V_{resistor} = Ri\). As for the
+times the current flowing through it: $V_{resistor} = Ri$. As for the
 inductor, voltage drop across it is proportional to a constant times the
 *instantaneous rate of change* of it's current over time<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. Hence:
-\(V_{inductor} = L\frac{di}{dt}\). Now let's plug all of these into the
+$V_{inductor} = L\frac{di}{dt}$. Now let's plug all of these into the
 equation.
 
-\[\varepsilon - Ri(t) - L\frac{di}{dt} = 0\]
+$$\varepsilon - Ri(t) - L\frac{di}{dt} = 0$$
 
-Bringing \(-L\frac{di}{dt}\) to the other side we get:
+Bringing $-L\frac{di}{dt}$ to the other side we get:
 
-\[\varepsilon - Ri(t) = L\frac{di}{dt}\]
+$$\varepsilon - Ri(t) = L\frac{di}{dt}$$
 
 Now here comes the interesting part. Let's take the whole expression on
-the left-hand side as a single term and call it \(U\). Therefore:
+the left-hand side as a single term and call it $U$. Therefore:
 
-\[U = \varepsilon - Ri(t)\]
+$$U = \varepsilon - Ri(t)$$
 
-Taking a look at this expression, we see \(\varepsilon\) term is just a
-constant, therefore the \(U\) is merely a function of \(i\) over time. On
-the right-hand side we have the derivative of \(i\) over time! (times a
-constant \(L\) too). Essentially what we have here is a function on one
-side and it's derivative on the other side. To find this \(U\) we simply
+Taking a look at this expression, we see $\varepsilon$ term is just a
+constant, therefore the $U$ is merely a function of $i$ over time. On
+the right-hand side we have the derivative of $i$ over time! (times a
+constant $L$ too). Essentially what we have here is a function on one
+side and it's derivative on the other side. To find this $U$ we simply
 have to look at a function *whose value at different inputs, are same as
 it's derivative at those points*. This is were exponents come to play.
 Solving this equation, we get:
 
-\[i(t) = \frac{\varepsilon}{R}(1 - e^{-(R/L)t})\]
+$$i(t) = \frac{\varepsilon}{R}(1 - e^{-(R/L)t})$$
 
 By the way, the exact steps of how we got to this expression is omitted;
 They are merely algebraic manipulations for solving these differential
 equations. The important part is that this function is in form of
-exponential function \(e^x\).
+exponential function $e^x$.
 
 To recap what really happened, we know by the physical property of an
 inductor that the voltage drop across it, is proportional to the rate of
@@ -282,14 +292,14 @@ resistor) to it's current. So from putting these facts together, we are
 looking for a set of values over time in which their instantaneous rate
 of change is the same as their own values at those points.
 
-Finally substituting values of \(\varepsilon\), \(R\) and \(L\) for this into
+Finally substituting values of $\varepsilon$, $R$ and $L$ for this into
 this equation we get:
 
-\[i(t) = 0.05(1 - e^{-(100)t})\]
+$$i(t) = 0.05(1 - e^{-(100)t})$$
 
 Plotting this function we get:
 
-![img](Figure_1.png)
+![Current graph](Figure_1.png)
 
 Similar situation would happen if we had a capacitor instead of an
 inductor. With the difference that the part in which the derivative
@@ -297,13 +307,13 @@ appears (in this case derivative of charge \(Q\) over time instead of
 current \(i\) over time), would be for the resistor. Namely, if we had a
 capacitor instead of an inductor in this circuit, we should have gotten:
 
-\[\varepsilon - Ri(t) - \frac{Q}{C} = 0\]
+$$\varepsilon - Ri(t) - \frac{Q}{C} = 0$$
 
 Because the voltage drop across a capacitor is proportional to the
 accumulated charges \(Q\) in one plate over a constant \(C\) (capacitance).
 And that number, should be equal to the resistivity \(R\), times the
 current for the resistor part (Ohm's law). Current by definition is just
-the change of \(Q\) overtime (\(i(t) = \frac{dq}{dt}\)). Consequently,
+the change of \(Q\) overtime ($i(t) = \frac{dq}{dt}$). Consequently,
 solving that differential equation should give us the change of \(Q\) over
 time (instead of \(i\)) as an exponential.
 
@@ -329,7 +339,7 @@ and a collaborative project. Feel free to fork this document, send pull
 request and also give your feedback. Thanks for reading!
 
 
-# Footnotes
+# Notes
 
 <sup><a id="fn.1" href="#fnr.1">1</a></sup> Because in the wide areas of mathematics we are only interested
 in continuous and differentiable functions.

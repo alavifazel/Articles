@@ -12,11 +12,12 @@ These articles are meant to cover the topics of electrical and electronic engine
 5. [Transformers](https://github.com/blackreach/docs/releases/download/v0.1.1/4_Transformers.pdf)
 *The basics of single-phase transformers and why it's used in power transmission.*
 6. [The idea behind UNIX numeric file permissions](https://github.com/blackreach/docs/releases/download/v0.1.1/6_The_idea_behind_UNIX_numeric_file_permissions.pdf)
-*Generalized idea behind the numbering system used for representing UNIX file permissions*
+*The generalized idea behind the numbering system used for representing UNIX file permissions*
 7. TBD
 
 ## Releases
 Visit the [Release](https://github.com/blackreach/docs/releases/) page for complete list of generated PDF files.
+
 ### Fork it!
 These documents are intended to be part of an open and collaborative project. Feel free to fork them and/or send pull requests.
 
