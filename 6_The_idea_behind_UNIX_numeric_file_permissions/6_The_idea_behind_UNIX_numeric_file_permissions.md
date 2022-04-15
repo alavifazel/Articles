@@ -1,6 +1,7 @@
-Any UNIX-like operating system user is probably familiar with the
-**chmod** command. In short, this command changes the permission of a
-file (or directory) with the desired permisison level for the *owner*,
+# The idea behind UNIX numeric file permissions
+
+Any UNIX user is probably familiar with the **chmod** command.
+In short, this command changes the permission of a file (or directory) with the desired permisison level for the *owner*,
 *group* and *everyone else* in the system.
 
 For instance, the following command:

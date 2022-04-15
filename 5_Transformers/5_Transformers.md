@@ -1,5 +1,6 @@
+# Transformers
 
-# Table of Contents
+## Table of Contents
 
 1.  [Introduction](#introduction)
     1.  [Transformers: The basics](#transformers-the-basics)
@@ -14,7 +15,7 @@
 
 <a id="introduction"></a>
 
-# Introduction
+## Introduction
 
 Transformer is a device that takes an AC input and produces an AC output
 with the same frequency, but a *different voltage level*. These devices
@@ -56,12 +57,12 @@ These transformers that decrease the voltage level are also known as
 
 <a id="transformers-the-basics"></a>
 
-## Transformers: The basics
+### Transformers: The basics
 
 Working principal of a transformer is *Faraday's law of induction*. This
 physical law states that if we have a closed-path conductor (such as a
 loop of wire) and a changing magnetic field is passing though it, there
-will be an induced *electromotive force*<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> on the wire. Moreover,
+will be an induced *electromotive force*[^1] on the wire. Moreover,
 the strength of this induced EMF is proportional to the instantaneous
 rate of change of this magnetic field. This law is mathematically
 written as:
@@ -71,7 +72,7 @@ $$
 $$
 
 Which tells us that induced electromotive force is equal to the first
-derivative of magnetic *flux* in respect to time.<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+derivative of magnetic *flux* in respect to time[^2].
 
 Flux in general, is a measurement of how much a quantity is passing
 through a surface (magnetic field strength in this case). Hence it is
@@ -133,7 +134,7 @@ $$\mu_o$$ a constant that makes the units work in the SI system.
 ![Magnetic field around a wire](magnetic_field_around_a_wire.png)
 
 If we make a solenoid out of this wire, it forms a (nearly) uniform
-magnetic field strength inside of it <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>:
+magnetic field strength inside of it[^3]:
 
 ![Solenoid](solenoid.png)
 
@@ -148,7 +149,7 @@ $$
 When we have an solenoid and a current starts passing through it, by law
 of induction, voltage gets induced in the solenoid (in the same wires
 that was making it up). This voltage is also called **back EMF** and is
-always opposing the change in current.<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup> Note that an ideal solenoid
+always opposing the change in current[^4]. Note that an ideal solenoid
 that has no resistivity doesn't consume nor generates any electrical
 power; But merely holds it. For example, if a *back EMF* was caused as
 an effect of instantaneous positive change in the current, same voltage
@@ -245,7 +246,7 @@ $$
 \frac{N_1}{N_2} = a
 $$
 
-An ideal transformer doesn't consume nor generate any power<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>; Hence
+An ideal transformer doesn't consume nor generate any power[^5]; Hence
 the input and output power remain the same. This means that the change
 in voltage level of output is accompanied by a change in its current
 level, by amount that the formula of power $P(t) = V(t).I(t)$ gives the
@@ -451,25 +452,22 @@ root directory for more info), and were intended to be part of an open
 and a collaborative project. Feel free to fork this document, send pull
 request and also give your feedback. Thanks for reading!
 
-
-# Footnotes
-
-<sup><a id="fn.1" href="#fnr.1">1</a></sup> Electromotive force or EMF for short, is the force that causes
+[^1]: Electromotive force or EMF for short, is the force that causes
 the electrons to move in a wire.
 
-<sup><a id="fn.2" href="#fnr.2">2</a></sup> A note here, the negative sign ($-$) merely implies that the
+[^2]: A note here, the negative sign ($-$) merely implies that the
 induced voltage is in the opposite direction which the changed in
 flux happened; and has no effect on the magnitude of the induced
 voltage.
 
-<sup><a id="fn.3" href="#fnr.3">3</a></sup> We skip the proof here but it has a straightforward proof that
+[^3]: We skip the proof here but it has a straightforward proof that
 can be found on the web.
 
-<sup><a id="fn.4" href="#fnr.4">4</a></sup> The component *inductor* we saw in Article 1 was exactly a type
+[^4]: The component *inductor* we saw in Article 1 was exactly a type
 of solenoid; With the difference that inductors also of a core.
 Presence of a core makes their induction effect stronger.
 
-<sup><a id="fn.5" href="#fnr.5">5</a></sup> The reason for this property comes from physical properties of
+[^5]: The reason for this property comes from physical properties of
 transformers. Specifically the effect of 'Special Relativity'.
 Although understanding this theory doesn't directly affect how we
 understand the working of these devices, we would still have a

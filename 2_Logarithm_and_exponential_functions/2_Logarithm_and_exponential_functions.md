@@ -1,5 +1,6 @@
+# Logarithm and exponential functions
 
-# Table of Contents
+## Table of Contents
 
 1.  [Natural Logarithm](#natural-logarithm)
     1.  [Logarithm in "other bases"](#logarithm-in-other-bases)
@@ -11,7 +12,7 @@
 
 <a id="natural-logarithm"></a>
 
-# Natural Logarithm
+## Natural Logarithm
 
 Let's find a function that would satisfy the following equation:
 
@@ -86,7 +87,7 @@ Therefore for the function we got so far:
 $$f(ax) = f(x) + C$$
 
 For some constant $C$. If we define $f$ as the integral of $1/t$
-from $1$ **to** $x$ instead of an **arbitrary to**, namely:
+from $\mathbf{1}$ **to** $\mathbf{x}$ instead of an **arbitrary** $\mathbf{c}$ **to** $\mathbf{x}$, namely:
 
 $$f(x) = \int_{1}^{x} (1/t) dt$$
 
@@ -112,7 +113,7 @@ $$ln(x) = \int_{1}^{x} (1/t) dt$$
 
 <a id="the-constant-e"></a>
 
-# The constant $e$
+## The constant $e$
 
 The constant $e$ is a number that we define as the value in which
 $\ln(e) = 1$. Plugging it in the definition of the natural logarithm, it
@@ -165,7 +166,7 @@ of this function, which appears frequently in nature.
 
 <a id="the-function-mathbfex"></a>
 
-# The Function $\mathbf{e^x}$
+## The Function $\mathbf{e^x}$
 
 The function $e^x$ has numerous important properties. One of the most
 important ones, which we use over and over in circuitry and other fields
@@ -208,7 +209,7 @@ is the right way to explain these topics.
 
 <a id="applications-of-the-function-ex"></a>
 
-## Applications of the Function $e^x$
+### Applications of the Function $e^x$
 
 We now examine a case which the exponential function appear in circuit
 analysis. Assume a simple circuit consisting of a battery, a resistor
@@ -308,9 +309,9 @@ of both capacitor and inductor beside resistors and power supplies. For
 now, our goal was to get the big picture of the math behind this
 circuits and solve a basic one.
 
-# Notes
+## Notes
 
-## Logarithm in "other bases"
+### Logarithm in "other bases"
 
 If $b > 0$, $b \neq 1$ and if $x > 0$, the logarithm of $x$ to the
 "base" $b$ is defined as:
@@ -342,7 +343,7 @@ EMF gets produced.
 
 <a id="whats-next"></a>
 
-# What's Next?
+## What's Next?
 
 In the follow up article, we will discuss some math behind circuits
 consisting of sinusoidal signals; Namely *root mean square (rms)* and to

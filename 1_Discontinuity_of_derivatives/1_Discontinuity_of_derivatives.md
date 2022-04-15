@@ -1,5 +1,6 @@
+# Discontinuity of derivatives
 
-# Table of Contents
+## Table of Contents
 
 1.  [Prologue](#org6b1a708)
 2.  [Discontinuity of derivative at a single point](#org28f616f)
@@ -8,7 +9,7 @@
 
 <a id="org6b1a708"></a>
 
-# Prologue
+## Prologue
 
 Derivatives appear in almost every engineering subject.
 For example, Faraday's law of induction which is written as:
@@ -36,7 +37,7 @@ But first, let's first start with a classic example where discontinuity of deriv
 
 <a id="org28f616f"></a>
 
-# Discontinuity of derivative at a single point
+## Discontinuity of derivative at a single point
 
 The function below is a well-known function that has derivative at all points, and the value of these derivatives are all continuous except at a single point, $x = 0$.
 
@@ -50,7 +51,7 @@ f(x) =
 
 It has the following graph:
 
-![img](./img/figure1.png)
+![](./img/figure1.png)
 
 The derivative of this function (by plugging into the definition of derivative) is:
 
@@ -64,7 +65,7 @@ f'(x) =
 
 With the following graph:
 
-![img](./img/figure2.png)
+![](./img/figure2.png)
 
 Which clearly shows that it is discontinuous at \(x = 0\).
 As a side note, we may ask ourselves under which conditions does the discontinuity of derivative can occure?
@@ -79,8 +80,7 @@ Then for every \(y\) value between \(f'(a)\) and \(f'(b)\), there exists an \(x\
 
 What does that imply?
 It simply implies that our function has to be either continuous or if there is any form of discontinuity, either **right-hand-side** or **left-hand-side**, or both limits of that point should not be defined
-(as with our function at \(x = 0\)).
-<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+(as with our function at \(x = 0\))[^1].
 
 Now *how much* discontinuous a derivative function can be?
 For example, the following function:
@@ -93,21 +93,19 @@ f(x) =
      \end{cases}
 \end{equation}
 
-Has second type discontinuity at every point \(x\) in $$\mathbb{R}$$.
+Has second type discontinuity at every point \(x\) in $\mathbb{R}$.
 Can this function be a derivative function?
 The answer is *no*, because all derivative functions are said to be of *Baire class 1 functions* (also written as "Baire-1 function") in topology.
 And there are restrictions on how much discontinuous Baire-1 functions can be.
 Let's first define what Baire-1 functions are.
 
-
 <a id="org693b0bd"></a>
 
-# Baire-1 functions
+## Baire-1 functions
 
-Baire-1 function that we mentioned in the previous section, has the following definition:
-<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+Baire-1 function that we mentioned in the previous section, has the following definition[^2]:
 
-**Def.** If $$f(x) = \lim_{n\to\infty}{f_n(x)}$$ exists (as a real number) for each $$x \in \mathbb{R}$$, then the function \[f\] is Baire-1 function.
+**Def.** If $f(x) = \lim_{n\to\infty}{f_n(x)}$ exists (as a real number) for each $x \in \mathbb{R}$, then the function \[f\] is Baire-1 function.
 
 Derivative functions are Baire-1 class functions, because from elementary Calculus we know that:
 
@@ -161,7 +159,7 @@ This set is constructed as below:
     
     Contruction of a Cantor set is visualized as below:
     
-    ![img](./img/figure3.png)
+    ![](./img/figure3.png)
     
     *Non-meagre set* or second category: a set that is not meagre.
     
@@ -170,32 +168,29 @@ This set is constructed as below:
 
 <a id="org1922c46"></a>
 
-# Baire-Osgood theorem
+## Baire-Osgood theorem
 
 Finally, we shall mention a theorem that would answer our original question.
 
-**Theorem** Let \(f\) be a <span class="underline">Baire-1 function</span> on the <span class="underline">complete metric space</span> \(X\). Then \(f\) is continuous on a <span class="underline">residual subset</span> of \(X\).
-<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
+**Theorem** Let \(f\) be a <span class="underline">Baire-1 function</span> on the <span class="underline">complete metric space</span> \(X\). Then \(f\) is continuous on a <span class="underline">residual subset</span> of \(X\)[^3].
 
 Therefore, if our function is differentiable everywhere, the derivative function should have a dense set of points where it is continouous.
 
 And moreover:
 
-**Theorem** Let \(f\) be a real-valued function on $$\mathbb{R}$$. The set of points of discontinuity of \(f\) is of first category (meagre set) if and only if \(f\) is continuous at a dense set of points.
+**Theorem** Let \(f\) be a real-valued function on $\mathbb{R}$. The set of points of discontinuity of \(f\) is of first category (meagre set) if and only if \(f\) is continuous at a dense set of points.
 
 One thing to mention in the end is that even though discontinuity points are meagre set, a derivative function can be non-integrable in the classical definition of integral i.e. Riemann integral.
 An example of such a function is called *Volterra's function*.
 This function is differentiable everywhere but it is discontiuous on a set of nowhere dense but positive measures (uncountably many).
 Therefore, it is not Riemann integralable.
 
-# References
+## References
 John C. Oxtoby, *Measure and Category*, 2nd edition - Theorem 7.3, Page 32
 Neal L. Carothers, *Real Analysis, Cambridge University* - Chapter 11, Theorem 11.20, Page 183
 
-# Footnotes
+[^1]: This kind of discontinuity is referred to as *the second type* discontinuity compared to more well-known *first type* like "jumps" in graphs.
 
-<sup><a id="fn.1" href="#fnr.1">1</a></sup> This kind of discontinuity is referred to as *the second type* discontinuity compared to more well-known *first type* like "jumps" in graphs.
+[^2]: This section requires familiarity with functional sequences and pointwise convergence mean. I highly recommend to watch "Functional sequences (Part 1 of 2)" by Rob Shone on YouTube; here I assume you already know what these terms mean
 
-<sup><a id="fn.2" href="#fnr.2">2</a></sup> This section requires familiarity with functional sequences and pointwise convergence mean. I highly recommend to watch "Functional sequences (Part 1 of 2)" by Rob Shone on YouTube; here I assume you already know what these terms mean
-
-<sup><a id="fn.3" href="#fnr.3">3</a></sup> This theorem is a result of "Baire category theorem" and the proof can be found on N.L. Carothers, "Real Analysis" P. 183
+[^3]: This theorem is a result of "Baire category theorem" and the proof can be found on N.L. Carothers, "Real Analysis" P. 183

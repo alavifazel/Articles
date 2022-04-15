@@ -1,5 +1,5 @@
 
-# Table of Contents
+## Table of Contents
 
 1.  [Root mean square](#root-mean-square)
     1.  [When do we use rms?](#when-do-we-use-rms)
@@ -9,7 +9,7 @@
 
 <a id="root-mean-square"></a>
 
-# Root mean square
+## Root mean square
 
 Root mean square for a set of discrete numbers, which is commonly called
 by it's abbreviation **rms** is defined as:
@@ -44,7 +44,7 @@ $$
 
 <a id="when-do-we-use-rms"></a>
 
-## When do we use rms?
+### When do we use rms?
 
 When the source of electrical power in not a fixed DC value and it's
 alternating over time, how would we calculate the *average power*
@@ -151,7 +151,7 @@ $\sqrt{2}$.
 
 <a id="representing-electrical-signals-in-software"></a>
 
-# Representing electrical signals in software
+## Representing electrical signals in software
 
 Before continuing with the more advanced EE concepts, let's implement
 the ideas we discussed so far in form of a software package. We would
@@ -162,7 +162,7 @@ also supports advanced language features and paradigms.
 
 One of the fundamental concepts that we would want to implement, is a
 construct that would represent an *electrical signal* in our programs.
-This idea can be implemented conveniently with OOP<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> paradigm; i.e.
+This idea can be implemented conveniently with OOP[^1] paradigm; i.e.
 if we have a *class* that represents the type of a signal in our
 program, instantiating it with:
 
@@ -321,7 +321,7 @@ an input signal for analyzing circuits with a software.
 
 <a id="whats-next"></a>
 
-# What's Next?
+## What's Next?
 
 In the follow up article, we will discuss some concepts behind AC
 circuit analysis; Namely phasor diagrams and complex number
@@ -333,6 +333,4 @@ and a collaborative project. Feel free to fork this document, send pull
 request and also give your feedback. Thanks for reading!
 
 
-# Footnotes
-
-<sup><a id="fn.1" href="#fnr.1">1</a></sup> Object Oriented Programming
+[^1]: Object Oriented Programming
