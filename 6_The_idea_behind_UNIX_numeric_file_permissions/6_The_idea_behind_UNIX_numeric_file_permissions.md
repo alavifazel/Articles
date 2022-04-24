@@ -12,7 +12,7 @@ Changes the permission of *filename.txt* to **read, write, execute** for
 the *owner*, and **read and execute** for *group* and *everyone*
 respectively.
 
-The way that the number 755 carried this information is that each digit
+The way that the number 755 carries this information is that each digit
 (7 or 5 in this example) is an addition of the following numbers that
 have special meanings for UNIX:
 
@@ -22,7 +22,7 @@ have special meanings for UNIX:
 
 -   *4* for read permission.
 
-In our example, 5 was the result of (1 + 4) and the OS concluded that we
+In our example, 5 is the result of (1 + 4) and the OS concluded that we
 needed both **read** and **execution** permissions.
 
 What I was wondering was how there was a guarantees that a number in
@@ -71,5 +71,5 @@ order of Chicken Wings with Coca-Cola Classics. When this number is
 converted to base 16, it yields 25, where each digit (2 and 5) represent
 an ID from their example tables.
 
-Although this example wasn't practical, it was examplify the generalized
+Although this example is probably not a practical one, it was examplify the generalized
 the idea behind the concept of file permissions in UNIX.

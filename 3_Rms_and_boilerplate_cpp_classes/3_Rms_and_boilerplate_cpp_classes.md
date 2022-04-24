@@ -214,17 +214,14 @@ somewhere in our program.
 Few remarks here:
 
 1.  We included the header **functional** to make the type *std::function*
-
 available in our program. With this type we captured the function's body
 in the constructor.
 
-1.  We defined a type alias for a real-valued math function that have
-
+2.  We defined a type alias for a real-valued math function that have
 real-valued inputs and outputs ($\Re\rightarrow\Re$). We called this
 alias **rftype** for ***r\*eal-valued \*f\*unction \*type**.*
 
-1.  We declared the member variable \(function\), as a protected member
-
+3.  We declared the member variable \(function\), as a protected member
 because later on we want to derive more specific types of signal namely
 DC, AC and Sinusoidal AC from this class.
 
