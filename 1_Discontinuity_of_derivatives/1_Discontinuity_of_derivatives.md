@@ -88,8 +88,8 @@ For example, the following function:
 \begin{equation}
 f(x) = 
      \begin{cases}
-       1 &\quad\text{if } x \quad text{rational } \\
-       0 &\quad\text{if } x \quad text{irrational } \\
+       1 &\quad\text{if } x \quad \text{rational} \\
+       0 &\quad\text{if } x \quad \text{irrational} \\
      \end{cases}
 \end{equation}
 
