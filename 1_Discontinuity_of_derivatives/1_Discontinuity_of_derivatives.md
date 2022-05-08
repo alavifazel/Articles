@@ -88,8 +88,8 @@ For example, the following function:
 \begin{equation}
 f(x) = 
      \begin{cases}
-       1 &\quad\text{if } x \text{rational } \\
-       0 &\quad\text{if } x \text{irrational } \\
+       1 &\quad\text{if } x \quad text{rational } \\
+       0 &\quad\text{if } x \quad text{irrational } \\
      \end{cases}
 \end{equation}
 
@@ -101,11 +101,14 @@ Let's first define what Baire-1 functions are.
 
 <a id="org693b0bd"></a>
 
-## Baire-1 functions
+## Baire-0 and Baire-1 functions
 
-Baire-1 function that we mentioned in the previous section, has the following definition[^2]:
+Baire-0 functions are all the continuous functions.
 
-**Def.** If $f(x) = \lim_{n\to\infty}{f_n(x)}$ exists (as a real number) for each $x \in \mathbb{R}$, then the function \[f\] is Baire-1 function.
+Baire-1 is defined as follows[^2]:
+
+**Def.** Let $D \subset \mathbb{R}$. A function $f: D \rightarrow \mathbb{R}$ is called a Baire-1 function if $f$ is pointwise limit of a sequence if continuous functions.
+In other words, there is a sequence $\{f_n\}$ of functions continuous on $D$ such that for every $x \in D$, $f(x) = \lim_{n\to\infty}{f_n(x)}$.
 
 Derivative functions are Baire-1 class functions, because from elementary Calculus we know that:
 
