@@ -128,10 +128,9 @@ $$
 Substituting the sine term with this property:
 
 $$
-\begin{aligned}
-    V_{rms} = V_{Max} \sqrt{\frac{1}{{T_1 - T_0}}{\int_{T_0}^{T_1} \frac{1 + \sin \omega t dt}{2}}} = \\
-     V_{Max} \sqrt{\frac{1}{T_1 - T_0} \left[ \frac{t}{2} - \frac{\sin 2 \omega t}{4 \omega}\right]_{T_0}^{T_1} }
-    \end{aligned}
+V_{rms} = V_{Max} \sqrt{\frac{1}{{T_1 - T_0}}{\int_{T_0}^{T_1} \frac{1 + \sin \omega t dt}{2}}} = \\
+$$$$
+V_{Max} \sqrt{\frac{1}{T_1 - T_0} \left[ \frac{t}{2} - \frac{\sin 2 \omega t}{4 \omega}\right]_{T_0}^{T_1} }
 $$
 
 Now since the range \(T_0\) to \(T_1\) is one period of the sinusoidal
@@ -247,11 +246,11 @@ For AC signal class:
             if(std::abs(t) <= std::abs(p)) return func(t);
             else return func(t - (int)(t/p) * p);
         }), f(1/p), p(p){}
-    
+
         double getRms() {
             return std::sqrt(1/p * numerical_integration(function, 0, p));
         }
-    
+
         double getFrequency() { return f; }
         double getPeriod() { return p; }
     protected:
@@ -299,9 +298,9 @@ derive it from the *AcSignal*.
          AcSignal([amplitude, frequency, phase](double t) -> double {
          return amplitude * std::sin(t*2*3.14159268*frequency + phase);
         }, 1/frequency), a(amplitude) {}
-    
+
         double getRms() { return a/std::sqrt(2); }
-    
+
         double getAmplitude() { return a; }
     private:
         double a;

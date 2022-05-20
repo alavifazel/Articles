@@ -128,7 +128,7 @@ $$
 B = \frac{\mu_o I}{2 \pi r}
 $$
 
-$I$ as current in unit of Amperes, \(r\) as the distance from wire and
+$I$ as current in unit of Amperes, $r$ as the distance from wire and
 $$\mu_o$$ a constant that makes the units work in the SI system.
 
 ![Magnetic field around a wire](magnetic_field_around_a_wire.png)
@@ -144,7 +144,7 @@ $$
 B = \mu_o N I / L
 $$
 
-($N$ is number of wire turns and \(L\) the length of the solenoid.)
+($N$ is number of wire turns and $L$ the length of the solenoid.)
 
 When we have an solenoid and a current starts passing through it, by law
 of induction, voltage gets induced in the solenoid (in the same wires
@@ -199,7 +199,7 @@ $$
 \varepsilon_{rms} = \frac{N B_{m} A (2\pi f)}{\sqrt{2}} \approx 4.44NB_{m}Af
 $$
 
-($N$ is number of turns, $B_m$ Maximum field density, \(A\) surface and
+($N$ is number of turns, $B_m$ Maximum field density, $A$ surface and
 $f$ frequency)
 
 
@@ -220,12 +220,13 @@ flux of the first coil (hence its change over time) passes through the
 second one too. Let's denote the first one $E_1$ and the latter as
 $E_2$. These values can be obtained by:
 
-\[\begin{aligned}
-    & E_1 = 4.44N_1B_{m}Af \\
-    & E_2 = 4.44N_2B_{m}Af
-    \end{aligned}\]
+$$
+E_1 = 4.44N_1B_{m}Af
+$$$$
+E_2 = 4.44N_2B_{m}Af
+$$
 
-And since all of these parameters except $N_1$ and \(N_2\) are same for
+And since all of these parameters except $N_1$ and $N_2$ are same for
 both of these coils, we can simply divide them to get their ratio:
 
 $$
@@ -236,7 +237,7 @@ This relation simply means that the ratio of induced voltage on each
 side is proportional to the number coil turns in that side. The setup we
 have here is the basic construction of a transformer and equation (1) is
 the main formula we use to describe a transformer. For short it is also
-written as *$N_1$:\(N_2\)*. For example a *1:10* transformer increases the
+written as *$N_1$:$N_2$*. For example a *1:10* transformer increases the
 voltage level of a sinusoidal AC signal by the multiple of $10$.
 
 The ratio $\frac{N_1}{N_2}$ of a transformer is also called *turn ratio*
@@ -298,7 +299,7 @@ $$
 
 $$
 \frac{Z_1}{Z_2} = (\frac{I_2}{I_1})^2 = a^2
-$$ 
+$$
 
 $$
 Z_1 = Z_2a^2
@@ -325,12 +326,12 @@ As shown in the diagram, this circuit is made up by both *series* and
 *parallel* elements.
 
 The series elements are the result of the *coils* in each side. More
-precisely, $R_1$ and \(R_2\) are due resistivity and the inductor elements
-$X_1$ and \(X_2\) due the main inductive effect of the first and second
+precisely, $R_1$ and $R_2$ are due resistivity and the inductor elements
+$X_1$ and $X_2$ due the main inductive effect of the first and second
 coils respectively.
 
-The parallel elements $R_c$ and \(X_m\) are core losses of the
-transformer. $R_c$ is called *magnetization resistivity* and \(X_m\) is
+The parallel elements $R_c$ and $X_m$ are core losses of the
+transformer. $R_c$ is called *magnetization resistivity* and $X_m$ is
 the effect of *flux leakage*. Flux leakage is the flux that doesn't get
 fully captured by the other side (in some sense it gets "wasted"). We
 can think of this leakage, analogous by having a simple inductor without
@@ -340,7 +341,7 @@ the input voltage independently yet simultaneous.
 
 This somewhat complicated equivalent circuit can be simplified for power
 transformers with a few approximations. In transformers the current that
-flows through the parallel elements ($R_c$ and \(X_m\)) is a fraction of
+flows through the parallel elements ($R_c$ and $X_m$) is a fraction of
 the current in series elements. With this physical property we can
 remove the parallel elements in practical sense, thus simplifying the
 equivalent circuit greatly to:
@@ -387,21 +388,21 @@ to the other side and simultaneously we measure power and current on the
 side as well.
 
 Since there is no load on the secondary side, a current will flow
-through the first series element ($R_1$ and \(X_1\)) as well as the
-excitation branch ($R_c$ and \(X_m\)). The impedance of series elements
+through the first series element ($R_1$ and $X_1$) as well as the
+excitation branch ($R_c$ and $X_m$). The impedance of series elements
 are substantially lower than the elements in excitation branch. Hence we
 can conclude that approximately all the voltage drop of our input signal
 has occurred in the excitation branch.
 
 Now that we have the value of input voltage (from our source) and we
 measured the power and current as well, we can use these formulas to
-calculate the elements $R_c$ and \(X_m\).
+calculate the elements $R_c$ and $X_m$.
 
 $$\cos \phi = \frac{P}{U I}\] \[\sin \phi = \sqrt{1 - \cos^2 \phi}$$
 $$I_c = I \cos \phi\] \[I_m = I \sin \phi\] \[X_m = \frac{U}{I_m}$$
 $$R_c = \frac{U}{I_c}$$
 
-($P$ and \(I\) are the measured power and current respectively, and \(U\)
+($P$ and $I$ are the measured power and current respectively, and $U$
 the applied voltage from our source.)
 
 A note here: In step (2) we choose the low-voltage side for measurements
@@ -425,7 +426,7 @@ we measure both power and current as well.
 Since the secondary side is short-circuited, applying a very small
 voltage in the primary side causes maximum current to flow in the
 transformer. Small voltage different between two input terminals means
-that the current that flows in the parallel elements ($R_c$ and \(X_m\))
+that the current that flows in the parallel elements ($R_c$ and $X_m$)
 is negligible and therefore can be ignored. This approximation implies
 that all voltage drop in this experiment is caused by the series
 elements.
