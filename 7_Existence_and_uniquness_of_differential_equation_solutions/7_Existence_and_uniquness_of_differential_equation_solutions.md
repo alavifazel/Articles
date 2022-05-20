@@ -17,8 +17,8 @@ $$
 y(x) = 10 + -200.85e^{-t}
 $$
 
-Could there be more functions that would satisfy this differential equation as well?
-Or is it the only solution to this ODE?
+Could there be more functions that would satisfy this ODE as well?
+Or is it the only solution? 
 The **Picard–Lindelöf theorem** answers this question and guarantees the existence and uniqueness of differential equation solutions (with their initial conditions) under certain conditions.
 But before stating this theorem, we need to know a few definitions and concepts first.
 
