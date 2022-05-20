@@ -1,7 +1,7 @@
 ---
 author: Iman A. Fazel
 ---
-# Existence and uniqueness of differential equations
+# Existence and uniqueness of differential equation solutions
 Assume we have the following ordinary differential equation (ODE):
 
 $$
@@ -19,7 +19,7 @@ $$
 
 Could there be more functions that would satisfy this differential equation as well?
 Or is it the only solution to this ODE?
-The **Picard–Lindelöf theorem** answers this question and guarantees the existence and uniqueness of differential equations (with their initial conditions) under certain conditions.
+The **Picard–Lindelöf theorem** answers this question and guarantees the existence and uniqueness of differential equation solutions (with their initial conditions) under certain conditions.
 But before stating this theorem, we need to know a few definitions and concepts first.
 
 ## Lipschitz continuity
@@ -28,7 +28,7 @@ Lipschitz continuity is a strong form of continuity which, for real numbers, is 
 **Def.** A real-valued function $f : \mathbb{R} \rightarrow \mathbb{R}$ is called Lipschitz continuous if there exists a positive real constant $L$ such that:
 
 $$
-|f(x_0) - f(x_1)| \le L(|x_0 - x_1|)
+|f(x_0) - f(x_1)| \le L|x_0 - x_1|
 $$
 
 For all real $x_0$ and $x_1$.
@@ -96,7 +96,7 @@ Pictorially, all points where the graph of $f(x) = x$ intersects our function's 
 To look at another example, let's say function $f$ is:
 
 $$
-f = \cos{3x}
+f(x) = \cos{3x}
 $$
 
 Let's plot this function alongside $f(x) = x$ to find the points where they intersect:
@@ -196,7 +196,7 @@ It states the following:
 Let $(X, d)$ be a non-empty complete metric space with a contraction mapping $T : X \rightarrow X$.
 Then T admits a unique fixed-point $x^*$ in $X$, and furthermore, $T(x^*) = x^*$.
 
-In our previous example function, $f(x) = x^2$ was a contraction map in $[0,1]$ and this theorem guarantees that recursively putting an output of this function to itself (starting from a number between $0$ and $1$) will result in reaching a fixed-point which was $0$ in this case.
+In our previous example function, $f(x) = x^2$ was a contraction map in $[0,1]$ and this theorem implies that recursively giving outputs of this function to itself (starting from a number between $0$ and $1$) will result in reaching a fixed-point which was $0$ in this case.
 
 To get a feeling on why does feeding output of a contraction map produces outputs closer to its fixed-point, consider the following graph:
 
