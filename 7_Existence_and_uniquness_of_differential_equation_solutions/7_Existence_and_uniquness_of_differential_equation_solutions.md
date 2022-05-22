@@ -74,8 +74,6 @@ $$
 
 Is a Lipschitz function but it is not differentiable at $x = 0$.
 
-The essence of Lipschitz continuous function tells us that that the derivative of that function is bounded by a constant.
-
 ## Banach fixed-point theorem
 Before stating this theorem, we first should know what a *fixed-point* and *contraction mapping* is.
 
@@ -256,8 +254,6 @@ Which is undefined for $y = 0$, hence it is not Lipschitz continuous.
 **Remark 2**:
 This theorem only guarantees the existence and uniqueness of solutions on the closed local neighborhood $[t_0 - \varepsilon, t_0 + \varepsilon]$.
 However, It can be shown by the *Grönwall's inequality* lemma that this local solution is in fact, a global solution to a differential equation (with a given set of initial conditions).
-
-
 
 Now we proceed to prove the Picard-Lindelöf theorem.
 
