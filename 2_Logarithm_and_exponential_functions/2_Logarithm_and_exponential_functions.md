@@ -343,18 +343,7 @@ EMF gets produced.
 
 <a id="whats-next"></a>
 
-## What's Next?
-
-In the follow up article, we will discuss some math behind circuits
-consisting of sinusoidal signals; Namely *root mean square (rms)* and to
-see why is's convenient to define such an expression in AC circuitry.
-Subsequently we'll start writing some software code that we'd use in
-later articles and projects as boilerplate.
-
-These documents are published under an open license (see the project's
-root directory for more info), and were intended to be part of an open
-and a collaborative project. Feel free to fork this document, send pull
-request and also give your feedback. Thanks for reading!
-
-
-
+# Epilogue
+This article is licensed under Apache License 2.0.
+Please view the *LICENSE* file for more info.
+If you found any grammar or technical mistakes kindly send a pull request.

@@ -474,3 +474,8 @@ Although understanding this theory doesn't directly affect how we
 understand the working of these devices, we would still have a
 look at this theory in a separated article and also how does the
 'magnetic effect' gets created in the first place.
+
+# Epilogue
+This article is licensed under Apache License 2.0.
+Please view the *LICENSE* file for more info.
+If you found any grammar or technical mistakes kindly send a pull request.

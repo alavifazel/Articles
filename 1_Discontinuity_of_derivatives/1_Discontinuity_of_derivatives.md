@@ -197,3 +197,8 @@ Neal L. Carothers, *Real Analysis, Cambridge University* - Chapter 11, Theorem 1
 [^2]: This section requires familiarity with functional sequences and pointwise convergence mean. I highly recommend to watch "Functional sequences (Part 1 of 2)" by Rob Shone on YouTube; here I assume you already know what these terms mean
 
 [^3]: This theorem is a result of "Baire category theorem" and the proof can be found on N.L. Carothers, "Real Analysis" P. 183
+
+# Epilogue
+This article is licensed under Apache License 2.0.
+Please view the *LICENSE* file for more info.
+If you found any grammar or technical mistakes kindly send a pull request.

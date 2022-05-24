@@ -5,10 +5,10 @@ These articles are meant to cover the topics of electrical and electronic engine
 *Answering the question of "how much discontinuous our derivative functions can be"*
 2. [Logarithm and exponential functions.](https://github.com/blackreach/docs/releases/download/v0.1.1/1_Logarithm_and_exponential_functions.pdf)
 *The math behind exponentials and how they appear in circuit analysis*
-3. [RMS value and boilerplate C++ classes](https://github.com/blackreach/docs/releases/download/v0.1.1/2_Rms_and_boilerplate_cpp_classes.pdf)
-*The concept of root mean square (rms) and the reason we define it for AC signals. We also implement some boilerplate C++ classes to work with electrical signals in our projects* 
-4. AC circuits and phasor diagram -
-*The circuits consist of AC Sources and phasor diagram for representing sinusoidal functions*
+3. [RMS value](https://github.com/blackreach/docs/releases/download/v0.1.1/2_Rms_value.pdf)
+*The concept of root mean square (rms) and the reason we define it for AC signals.*
+4. [Boilerplate C++ classes for electronics](https://github.com/blackreach/docs/releases/download/v0.1.1/4_Boilerplate_cpp_classes_for_electronics.pdf)
+*We implement boilerplate C++ classes to work with electrical signals* 
 5. [Transformers](https://github.com/blackreach/docs/releases/download/v0.1.1/4_Transformers.pdf)
 *The basics of single-phase transformers and why it's used in power transmission.*
 6. [The idea behind UNIX numeric file permissions](https://github.com/blackreach/docs/releases/download/v0.1.1/6_The_idea_behind_UNIX_numeric_file_permissions.pdf)

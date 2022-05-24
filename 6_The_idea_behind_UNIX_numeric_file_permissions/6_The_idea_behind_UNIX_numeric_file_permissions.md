@@ -73,3 +73,8 @@ an ID from their example tables.
 
 Although this example is probably not a practical one, it was examplify the generalized
 the idea behind the concept of file permissions in UNIX.
+
+# Epilogue
+This article is licensed under Apache License 2.0.
+Please view the *LICENSE* file for more info.
+If you found any grammar or technical mistakes kindly send a pull request.
