@@ -14,7 +14,7 @@ These articles are meant to cover the topics of electrical and electronic engine
 6. [The idea behind UNIX numeric file permissions](https://github.com/blackreach/docs/releases/download/v0.1.1/6_The_idea_behind_UNIX_numeric_file_permissions.pdf)
 *The generalized idea behind the numbering system used for representing UNIX file permissions*
 7. [Existence and uniquness of differential equation solutions](https://github.com/blackreach/docs/releases/download/v0.1.1/7_Existence_and_uniquness_of_differential_equation_solutions.pdf)
-*Let's say you found a function that satisfies a differential equation. Is it the only function that satisfies that equation?*
+*Let's say you found a function that satisfies a differential equation. Is it the only function that satisfies this equation?*
 8. TBD
 
 ## Releases
