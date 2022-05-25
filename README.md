@@ -8,7 +8,7 @@ These articles are meant to cover the topics of electrical and electronic engine
 3. [RMS value](https://github.com/blackreach/docs/releases/download/v0.1.1/2_Rms_value.pdf)
 *The concept of root mean square (rms) and the reason we define it for AC signals.*
 4. [Boilerplate C++ classes for electronics](https://github.com/blackreach/docs/releases/download/v0.1.1/4_Boilerplate_cpp_classes_for_electronics.pdf)
-*We implement boilerplate C++ classes to work with electrical signals* 
+*Implementation of a few boilerplate C++ classes for working with electrical signals* 
 5. [Transformers](https://github.com/blackreach/docs/releases/download/v0.1.1/4_Transformers.pdf)
 *The basics of single-phase transformers and why it's used in power transmission.*
 6. [The idea behind UNIX numeric file permissions](https://github.com/blackreach/docs/releases/download/v0.1.1/6_The_idea_behind_UNIX_numeric_file_permissions.pdf)
@@ -18,7 +18,7 @@ These articles are meant to cover the topics of electrical and electronic engine
 8. TBD
 
 ## Releases
-Visit the [Release](https://github.com/blackreach/docs/releases/) page for complete list of generated PDF files.
+Visit the [Release](https://github.com/blackreach/docs/releases/) page for the complete list of generated PDF files.
 
 ### Fork it!
 These documents are intended to be part of an open and collaborative project. Feel free to fork them and/or send pull requests.
