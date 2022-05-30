@@ -14,7 +14,7 @@ Let's say, with some algebraic tricks and manipulations, we could somehow find a
 For instance:
 
 $$
-y(x) = 10 + -200.85e^{-t}
+y(x) = 10 - 200.85e^{-t}
 $$
 
 Could there be more functions that would satisfy this ODE as well?
