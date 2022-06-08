@@ -13,9 +13,10 @@ These articles are meant to cover the topics of electrical and electronic engine
 *The basics of single-phase transformers and why it's used in power transmission.*
 6. [The idea behind UNIX numeric file permissions](https://github.com/blackreach/docs/releases/download/v0.1.1/6_The_idea_behind_UNIX_numeric_file_permissions.pdf)
 *The generalized idea behind the numbering system used for representing UNIX file permissions*
-7. [Existence and uniquness of first-order differential equation solutions](https://github.com/blackreach/docs/releases/download/v0.1.1/7_Existence_and_uniquness_of_first_order_ODEs.pdf)
+7. [Existence and uniqueness of first-order differential equation solutions](https://github.com/blackreach/docs/releases/download/v0.1.1/7_Existence_and_uniqueness_of_first_order_ODEs.pdf)
 *Let's say you found a function that satisfies a differential equation. Is it the only possible solution to this equation?*
-8. [Existence and uniquness of second-order linear differential equation solutions](https://github.com/blackreach/docs/releases/download/v0.1.1/8_Existence_and_uniquness_of_higher_order_ODEs.pdf)
+8. [Existence and uniqueness of second-order linear differential equation solutions](https://github.com/blackreach/docs/releases/download/v0.1.1/8_Existence_and_uniqueness_of_second_order_linear_ODEs.pdf)
+*The extended version existence and uniqueness for second-order DEs*
 9. TBD
 
 ## Releases
