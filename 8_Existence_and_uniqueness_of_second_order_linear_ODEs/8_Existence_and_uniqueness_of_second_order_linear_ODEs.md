@@ -44,10 +44,10 @@ We can introduce new variable $z = \frac{dy}{dx}$ to turn that second-order ODE 
 $$
 \frac{dy}{dx} = z \qquad y(x_0) = y_0,
 $$$$
-\frac{dz}{dx} = -P(x)z -Q(x) + R(x) \qquad z(x_0) = y'_0
+\frac{dz}{dx} = -P(x)z -Q(x)y + R(x) \qquad z(x_0) = y'_0
 $$
 
-Since the right-hand-side of both equations consists of continuous functions (i.e. $P(x)$, $Q(x)$, ...), there is a constant $K$ such that for all $x \in [a,b]$, they yield values less than or equal $K$.
+Since the right-hand-side of both equations consist of continuous functions (i.e. $P(x)$, $Q(x)$, ...), there is a constant $K$ such that for all $x \in [a,b]$, they yield values less than or equal $K$.
 Therefore, we have the Lipschitz condition:
 
 $$
