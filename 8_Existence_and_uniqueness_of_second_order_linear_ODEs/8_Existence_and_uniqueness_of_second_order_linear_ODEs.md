@@ -7,7 +7,7 @@ For instance, the friction-less mass-spring problem:
 
 ![Friction-less mass-spring system](./mass-spring.png){width=250px}
 
-Has the following equation for its location on the x-axis (using the Newton's law of motion):
+Has the following equation for its location on the x-axis (using the Newton's laws of motion):
 
 $$
 x'' + x = 0
@@ -19,9 +19,9 @@ $$
 x(t) = c_0\cos{t} + c_1\sin{t}
 $$
 
-(The value of constants $c_0$ and $c_1$ are determined by the initial conditions of this system i.e. the initial position and the velocity of the mass in this problem).
+(The value of constants $c_0$ and $c_1$ are determined by the initial conditions of this system i.e. the initial position and the velocity of the mass).
 
-Now we may ask, is the existence and uniqueness theorem for first-order IVPs that we discussed in the previous article still applicable in this linear second-order IVPs?
+Now we may ask, is the existence and uniqueness theorem for first-order IVPs that we discussed in the previous article still applicable in this linear second-order IVP?
 Since this IVP has **two** solutions, and both, as well as each of them satisfy the equation, is the superposition of these two independent solutions really the "general" solution to this ODE?
 The answer is yes.
 
@@ -47,7 +47,7 @@ $$$$
 \frac{dz}{dx} = -P(x)z -Q(x)y + R(x) \qquad z(x_0) = y'_0
 $$
 
-Since the right-hand-side of both equations consist of continuous functions (i.e. $P(x)$, $Q(x)$, ...), there is a constant $K$ such that for all $x \in [a,b]$, they yield values less than or equal $K$.
+Since the right-hand-side of both equations consist of continuous functions (i.e. $P(x)$, $Q(x)$, ...), there is a constant $K$ such that for all $x \in [a,b]$, they yield values less than or equal to $K$.
 Therefore, we have the Lipschitz condition:
 
 $$
@@ -56,7 +56,7 @@ $$
 
 For both right-hand-sides.
 
-At this point, we can construct Picard iterations for each of the equations independently.
+At this point, we may construct Picard iterations for each equation independently.
 Therefore, this system of first-order equations has a unique solution for $x$ in the interval $[a, b]$.
 
 **Ex.** Solve the following IVP using Picard iteration:

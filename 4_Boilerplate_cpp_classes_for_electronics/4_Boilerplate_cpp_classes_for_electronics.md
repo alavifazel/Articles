@@ -24,10 +24,9 @@ used operations such as calculating its \(rms\) and etc. Hence:
 
 Would return the function's *rms* or:
 
-    s.fourierTransform()
+    s.fourierSeries()
 
-Would apply Fourier transform on our signal (an important math operation
-that we will discuss in later articles) and so on.
+Would calculate the Fourier series of our signal (an important math operation that we will discuss in later articles), and so on.
 
 Let's start by defining the base class:
 
@@ -67,7 +66,7 @@ in the constructor.
 
 2.  We defined a type alias for a real-valued math function that have
 real-valued inputs and outputs ($\Re\rightarrow\Re$). We called this
-alias **rftype** for ***r\*eal-valued \*f\*unction \*type**.*
+alias **rftype** for **real-valued function type**.
 
 3.  We declared the member variable \(function\), as a protected member
 because later on we want to derive more specific types of signal namely
@@ -106,9 +105,8 @@ For AC signal class:
         double f, p;
     };
 
-This class is also straightforward. Its constructor accepts a function
-and period in which the function would repeat after that point. Note
-that in *getRms* function we use *numerical_integration* to calculate the definite integral.
+This class is also straightforward. Its constructor accepts a function and a period in which the function would repeat after that point.
+Note that in *getRms* function, we use *numerical_integration* to calculate the definite integral.
 This function can be implemented in various ways.
 An easy-to-implement way is to use the trapezoidal method:
 
