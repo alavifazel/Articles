@@ -1,7 +1,7 @@
 ---
 author: Iman A. Fazel
 ---
-# Existence and uniqueness of differential equation solutions
+# Existence and uniqueness of first-order DE solutions
 Assume we have the following ordinary differential equation (ODE):
 
 $$
@@ -18,7 +18,7 @@ y(x) = 10 - 200.85e^{-t}
 $$
 
 Could there be more functions that would satisfy this ODE as well?
-Or is it the only solution? 
+Or is it the only solution?
 The **Picard–Lindelöf theorem** answers this question and guarantees the existence and uniqueness of differential equation solutions (with their initial conditions) under certain conditions.
 But before stating this theorem, we need to know a few definitions and concepts first.
 
