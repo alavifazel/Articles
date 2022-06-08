@@ -122,9 +122,9 @@ y(x) = c_0\cos{x} + c_1\sin{x}
 $$
 
 # References
-George F. Simmons, *Differential Equations With Applications And Historical Notes* - Page 640
+George F. Simmons, *Differential Equations With Applications And Historical Notes* - P. 640
 
-Earl A. Coddington, *An Introduction to Ordinary Differential Equations* - Page 246
+Earl A. Coddington, *An Introduction to Ordinary Differential Equations* - P. 246
 
 
 # Epilogue
