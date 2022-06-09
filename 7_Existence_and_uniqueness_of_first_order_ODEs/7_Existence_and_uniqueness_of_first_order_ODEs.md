@@ -476,7 +476,7 @@ $$
 Is it also Lipschitz continuous? Yes, since for a given $t$ we have something like:
 
 $$
-|(1 + (100)^2 - (1 + (300)^2| \le L (100) - (300)|
+|(1 + (100)^2) - (1 + (300)^2)| \le L (100) - (300)|
 $$
 
 Which is fine with the definition of a Lipschitz function (... there is a constant $L$ such that for **every** $x,y$ in $X$, we have ...).
@@ -506,6 +506,10 @@ $$$$
 \implies 12.864 \le 59.3*0.16*24.58 = 23.321
 $$
 
+The graphs around $t=2$ are depicted as below (black ones are $\phi_0(x)$ and $\phi_1(x)$, and the red ones are $T(\phi_0)(x)$ and $T(\phi_1)(x)$):
+
+![](./graph.png)
+
 Now that we've seen how $T$ is a contraction map, let's visually see its behavior under some Picard iterations for a differential equation.
 Assume we have the following ODE:
 
@@ -522,7 +526,7 @@ $$\phi_3(t) = 3 + \int_2^t (s + \frac{s^3 + 12s^2 - 30s}{6} = \frac{t^4 + 16t^3 
 
 We now shall see $\sup_t|(\phi_1(t) - \phi_3(t))| \le q\sup_t|(\phi_0(t) - \phi_2(t))$ for some $0 < q < 1$ on the graph:
 
-![Graph of the first four terms of a Picard sequence](./picard_example.png){width=300px}
+![](./picard_example.png)
 
 # Epilogue
 This article was intended to be written as mathematically accurate as possible.

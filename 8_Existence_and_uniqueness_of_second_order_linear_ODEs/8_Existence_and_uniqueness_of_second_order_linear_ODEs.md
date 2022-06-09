@@ -2,7 +2,7 @@
 author: Iman A. Fazel
 ---
 # Existence and uniqueness of second-order linear DE solutions
-Many real-world physical phenomena express themselves in terms of second-order linear differential equations.
+Many real world physical phenomena express themselves in terms of second-order linear differential equations.
 For instance, the friction-less mass-spring problem:
 
 ![Friction-less mass-spring system](./mass-spring.png){width=250px}
@@ -128,6 +128,7 @@ Earl A. Coddington, *An Introduction to Ordinary Differential Equations* - P. 24
 
 
 # Epilogue
+Thi
 This article was intended to be written as mathematically accurate as possible.
 If you found any grammar or technical mistakes kindly send a pull request.
 This article is licensed under Apache License 2.0.
