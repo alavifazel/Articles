@@ -17,7 +17,7 @@ $$
 y(x) = 10 - 200.85e^{-t}
 $$
 
-Could there be more functions that would satisfy this ODE as well?
+Could there be more functions that satisfy this ODE as well?
 Or is it the only solution?
 The **Picard–Lindelöf theorem** answers this question and guarantees the existence and uniqueness of differential equation solutions (with their initial conditions) under certain conditions.
 But before stating this theorem, we need to know a few definitions and concepts first.
@@ -63,7 +63,7 @@ $$
 \lim_{x \to 0} \frac{f(x)-f(0)}{x-0} = \lim_{x \to 0} \frac{\sqrt{x}}{x} = \lim_{x \to 0} \frac{1}{\sqrt{x}}
 $$
 
-Which it goes to infinity.
+Which goes to infinity.
 
 As another note, the definition of Lipschitz continuity might look similar to the definition of differentiability; but not all Lipschitz functions are 'everywhere differentiable'.
 For instance, the function:
@@ -75,7 +75,7 @@ $$
 Is a Lipschitz function but it is not differentiable at $x = 0$.
 
 ## Banach fixed-point theorem
-Before stating this theorem, we first should know what a *fixed-point* and *contraction mapping* is.
+Before stating this theorem, we first should know what a *fixed-point* and *contraction mapping* are.
 
 ### Fixed-point
 The number $c$ is called a **fixed-point** of function $f$ if we have $f(c) = c$.
@@ -337,7 +337,7 @@ $$T: C(I_a(t_0),B_b(y_0)) \rightarrow C(I_a(t_0),B_b(y_0)) $$
 The proof consists of *two parts*.
 
 1. We must show that function $T$, "maps a $C(I_a(t_0),B_b(y_0))$ into itself":
-What it means is that, we want to show that giving function $\phi(t)$ to $T$ (with values in $[y_0 - b, y_0 + b]$), results in a function which is also defined in this interval as well.
+What it means is that, we want to show that giving function $\phi(t)$ to $T$ (with values in $[y_0 - b, y_0 + b]$), results in a function which is also defined in this interval. 
 In other words, by having:
 
 $$
