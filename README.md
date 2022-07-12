@@ -16,7 +16,7 @@ These articles are meant to cover the topics of electrical and electronic engine
 7. [Existence and uniqueness of first-order differential equation solutions](https://github.com/blackreach/docs/releases/download/v0.1.1/7_Existence_and_uniqueness_of_first_order_ODEs.pdf)
 *Let's say you found a function that satisfies a differential equation. Is it the only possible solution to this equation?*
 8. [Existence and uniqueness of second-order linear differential equation solutions](https://github.com/blackreach/docs/releases/download/v0.1.1/8_Existence_and_uniqueness_of_second_order_linear_ODEs.pdf)
-*The extended version existence and uniqueness for second-order DEs*
+*The extended version of existence and uniqueness for second-order DEs*
 9. TBD
 
 ## Releases
